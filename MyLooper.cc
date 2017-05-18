@@ -161,7 +161,7 @@ void PlotLoop (const TChain& chain, const string& output_file_name)
   TH1F h_dom_nm1("h_dom_nm1", ("|MHT-MET|/MET Distribution All Other Cuts Applied;|MHT-MET|/MET;Count / " + dom_bin_nm1).c_str(), n_dom_bins, dom_min, dom_max_nm1);
   TH1F h_njet_nm1("h_njet_nm1", "N_{J} Distribution, All Other Cuts Applied;N_{jet};Count", n_njet_bins, njet_min, njet_max);
   TH1F h_nlep_nm1("h_nlep_nm1", "Lepton Veto Index Distribution, All Other Cuts Applied;Lepton Veto Index;Count", n_nlep_bins, nlep_min, nlep_max);
-  TH1F h_nll_nm1("h_nlep_nm1", "Light Lepton Distribution, All Other Cuts Applied;Number of Light Lepton;Count", n_nlep_bins, nlep_min, nlep_max);
+  TH1F h_nll_nm1("h_nll_nm1", "Light Lepton Distribution, All Other Cuts Applied;Number of Light Lepton;Count", n_nlep_bins, nlep_min, nlep_max);
   TH1F h_lowmt_nm1("h_lowmt_nm1", "nPFLep5LowMT Distribution, All Other Cuts Applied;nPFLep5LowMT;Count", n_nlep_bins, nlep_min, nlep_max);
 
   // All Cuts
@@ -378,6 +378,7 @@ void PlotLoop (const TChain& chain, const string& output_file_name)
   h_nlep_nm1.Write();
   h_dphi_nm1.Write();
   h_dom_nm1.Write();
+  h_njet_nm1.Write();
   h_nlep_nm1.Write();
   h_diff_nm1.Write();
   h_njmt2_nm1.Write();
