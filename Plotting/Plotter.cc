@@ -50,11 +50,9 @@ int main ()
   file_list.push_back("wjets");
   file_list.push_back("qcd"); 
   TCanvas c1("c1_print_temp", "temp printer");
-  c1.SetLogy();
   c1.cd();
 
   map< string, TH1F* > hist_list_1D;
-  map< string, TH2F* > hist_list_2D;
 
   for (vector<string>::iterator it = file_list.begin(); it != file_list.end(); ++it)
     {
@@ -100,11 +98,9 @@ int main ()
 	    {
 	      if ( TH2F* h2 = dynamic_cast<TH2F*>(gDirectory->Get(name.c_str()) ) )
 		{
-		  TH2F* hist_2d = new TH2F(*h2);
-		  hist_2d->SetDirectory(0);
-		  //hist_2d->SetFillColor(kColor);
-		  //hist_2d->SetLineColor(kColor);
-		  hist_list_2D[file_name+"_"+name] = hist_2d;
+		  // just print 2D histograms without stacking
+		  h2->Draw("colz");
+		  c1.Print( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
 		}
 	      else cout << "name matched TH2F but cast failed" << endl;
 	    }
@@ -186,22 +182,8 @@ int main ()
   THStack *hs_lowmt_trigger = new THStack("hs_lowmt_trigger", "Stacked Post-Trigger nPFLep5LowMT Distribution");
   THStack *hs_lowmt_nm1 = new THStack("hs_lowmt_nm1", "Stacked nPFLep5LowMT Distribution, All Other Cuts Applied");
 
-  THStack *hs_htmet_nocut = new THStack("hs_htmet_nocut", "Stacked Initial METxH{T} Distribution");
-  THStack *hs_htmet_trigger = new THStack("hs_htmet_trigger", "Stacked Post-Trigger METxH{T} Distribution");
-  THStack *hs_htmet_nm1 = new THStack("hs_htmet_nm1", "Stacked METxH{T} Distribution, All Other Cuts Applied");
-
-  THStack *hs_njbj_nocut = new THStack("hs_njbj_nocut", "Stacked Initial N_{b}xN_{J} Distribution");
-  THStack *hs_njbj_trigger = new THStack("hs_njbj_trigger", "Stacked Post-Trigger N_{b}xN_{J} Distribution");
-  THStack *hs_njbj_nm1 = new THStack("hs_njbj_nm1", "Stacked N_{b}xN_{J} Distribution, All Other Cuts Applied");
-
-  THStack *hs_diffdom_nocut = new THStack("hs_diffdom_nocut", "Stacked Initial METx|MHT-MET| Distribution");
-  THStack *hs_diffdom_trigger = new THStack("hs_diffdom_trigger", "Stacked Post-Trigger METx|MHT-MET| Distribution");
-  THStack *hs_diffdom_nm1 = new THStack("hs_diffdom_nm1", "Stacked METx|MHT-MET| Distribution, All Other Cuts Applied");
-
-  THStack *hs_njmt2_nocut = new THStack("hs_njmt2_nocut", "Stacked Initial M_{T2}xN_{J} Distribution");
-  THStack *hs_njmt2_trigger = new THStack("hs_njmt2_trigger", "Stacked Post-Trigger M_{T2}xN_{J} Distribution");
-  THStack *hs_njmt2_nm1 = new THStack("hs_njmt2_nm1", "Stacked M_{T2}xN_{J} Distribution, All Other Cuts Applied");
-
+  // Set c1 y axis to log for printing 1D histograms
+  c1.SetLogy();
 
   // Legends
   Double_t x1 = 0.8, x2 = x1+0.2, y1 = 0.5, y2 = y1+0.4;
@@ -233,23 +215,8 @@ int main ()
   TLegend *lowmt_nc_leg = new TLegend(x1, y1, x2, y2);
   TLegend *lowmt_nm1_leg = new TLegend(x1, y1, x2, y2);
   TLegend *lowmt_trig_leg = new TLegend(x1, y1, x2, y2);
-  // TH2s
-  TLegend *htmet_nc_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *htmet_nm1_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *htmet_trig_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *njbj_nc_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *njbj_nm1_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *njbj_trig_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *diffdom_nc_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *diffdom_nm1_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *diffdom_trig_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *njmt2_nc_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *njmt2_nm1_leg = new TLegend(x1, y1, x2, y2);
-  TLegend *njmt2_trig_leg = new TLegend(x1, y1, x2, y2);
-  
 
   TH1F* temp; 
-  TH2F* temp2;
   for (vector<string>::iterator it = file_list.begin(); it != file_list.end(); ++it)
     {
       const string sample = (*it);
@@ -326,9 +293,9 @@ int main ()
       hs_njet_trigger->Add(temp, "hist");
       njet_trig_leg->AddEntry(temp, sample.c_str());
 
-      //temp = hist_list_1D.at( sample + "_h_njet_nm1");
-      //hs_njet_nm1->Add(temp, "hist");
-      //njet_nm1_leg->AddEntry(temp, sample.c_str());
+      temp = hist_list_1D.at( sample + "_h_njet_nm1");
+      hs_njet_nm1->Add(temp, "hist");
+      njet_nm1_leg->AddEntry(temp, sample.c_str());
       
 
       // bjet
@@ -362,9 +329,9 @@ int main ()
       hs_nll_trigger->Add(temp, "hist");
       nll_trig_leg->AddEntry(temp, sample.c_str());
 
-      //      temp = hist_list_1D.at( sample + "_h_nll_nm1");
-      //hs_nll_nm1->Add(temp, "hist");
-      //nll_nm1_leg->AddEntry(temp, sample.c_str());
+      temp = hist_list_1D.at( sample + "_h_nll_nm1");
+      hs_nll_nm1->Add(temp, "hist");
+      nll_nm1_leg->AddEntry(temp, sample.c_str());
 
       // lowmt
       temp = hist_list_1D.at( sample  + "_h_lowmt_nocut");
@@ -378,13 +345,6 @@ int main ()
       temp = hist_list_1D.at( sample + "_h_lowmt_nm1");
       hs_lowmt_nm1->Add(temp, "hist");
       lowmt_nm1_leg->AddEntry(temp, sample.c_str());
-
-      /*
-	2D Histograms
-       */
-      // htmet
-      //      temp2 = hist_list_2D.at( sample+"_h_htmet_nocut");
-      //hs_htmet_nocut->Add(temp, "COLZ")
 
     }
 
