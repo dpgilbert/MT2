@@ -457,10 +457,10 @@ int main ()
   njet_trig_leg->Draw();
   CopyAxes(hs_njet_trigger, hist_list_1D.at("zinv_h_njet_trigger"), c1);
   c1.Print("/PDFs/hs_njet_trigger.pdf");
-  //  hs_njet_nm1->Draw();
-  //njet_nm1_leg->Draw();
-  //CopyAxes(hs_njet_nm1, hist_list_1D.at("zinv_h_njet_nm1"), c1);
-  //c1.Print("/PDFs/hs_njet_nm1.pdf");
+  hs_njet_nm1->Draw();
+  njet_nm1_leg->Draw();
+  CopyAxes(hs_njet_nm1, hist_list_1D.at("zinv_h_njet_nm1"), c1);
+  c1.Print("/PDFs/hs_njet_nm1.pdf");
 
   hs_bjet_nocut->Draw();
   bjet_nc_leg->Draw();
@@ -492,10 +492,10 @@ int main ()
   nll_trig_leg->Draw();
   CopyAxes(hs_nll_trigger, hist_list_1D.at("zinv_h_nll_trigger"), c1);
   c1.Print("/PDFs/hs_nll_trigger.pdf");
-  //  hs_nll_nm1->Draw();
-  //nll_nm1_leg->Draw();
-  //CopyAxes(hs_nll_nm1, hist_list_1D.at("zinv_h_nll_nm1"), c1);
-  //c1.Print("/PDFs/hs_nll_nm1.pdf");
+  hs_nll_nm1->Draw();
+  nll_nm1_leg->Draw();
+  CopyAxes(hs_nll_nm1, hist_list_1D.at("zinv_h_nll_nm1"), c1);
+  c1.Print("/PDFs/hs_nll_nm1.pdf");
 
   hs_lowmt_nocut->Draw();
   lowmt_nc_leg->Draw();
