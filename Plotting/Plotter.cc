@@ -21,6 +21,7 @@
 #include "TFile.h"
 #include "TLegend.h"
 #include "THStack.h"
+#include "TStyle.h"
 
 //#include "RooRealVar.h"
 //#include "RooDataSet.h"
@@ -52,6 +53,8 @@ int main ()
 
   // Legend location parameters
   Double_t x1 = 0.8, x2 = x1+0.2, y1 = 0.5, y2 = y1+0.4;
+  // Turn off stat box
+  gStyle->SetOptStat(0);
   // Use a single canvas for all prints
   TCanvas c1("c1_print_temp", "temp printer");
   c1.cd();
@@ -104,9 +107,6 @@ int main ()
 		{
 		  // just print 2D histograms without stacking
 		  h2->Draw("colz");
-		  TLegend* leg = new TLegend(x1,y1,x2,y2);
-		  leg->AddEntry(h2, file_name.c_str());
-		  leg->Draw();
 		  c1.Print( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
 		}
 	      else cout << "name matched TH2F but cast failed" << endl;
