@@ -106,6 +106,7 @@ int main ()
 		  h2->Draw("colz");
 		  TLegend* leg = new TLegend(x1,y1,x2,y2);
 		  leg->AddEntry(h2, file_name.c_str());
+		  leg->Draw();
 		  c1.Print( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
 		}
 	      else cout << "name matched TH2F but cast failed" << endl;
