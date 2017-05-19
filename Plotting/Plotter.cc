@@ -49,6 +49,10 @@ int main ()
   file_list.push_back("dyjets");
   file_list.push_back("wjets");
   file_list.push_back("qcd"); 
+
+  // Legend location parameters
+  Double_t x1 = 0.8, x2 = x1+0.2, y1 = 0.5, y2 = y1+0.4;
+  // Use a single canvas for all prints
   TCanvas c1("c1_print_temp", "temp printer");
   c1.cd();
 
@@ -100,6 +104,8 @@ int main ()
 		{
 		  // just print 2D histograms without stacking
 		  h2->Draw("colz");
+		  TLegend* leg = new TLegend(x1,y1,x2,y2);
+		  leg->AddEntry(h2, file_name.c_str());
 		  c1.Print( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
 		}
 	      else cout << "name matched TH2F but cast failed" << endl;
@@ -186,7 +192,6 @@ int main ()
   c1.SetLogy();
 
   // Legends
-  Double_t x1 = 0.8, x2 = x1+0.2, y1 = 0.5, y2 = y1+0.4;
   TLegend *mt2_nc_leg = new TLegend(x1, y1, x2, y2);
   TLegend *mt2_nm1_leg = new TLegend(x1, y1, x2, y2);
   TLegend *mt2_trig_leg = new TLegend(x1, y1, x2, y2);
