@@ -26,25 +26,43 @@ void skim_SUSY_signal (TChain* chain, const string& sample )
 {  
   string header = "SkimmedSUSYSignal/"+sample;
 
-  TFile *outfile1 = TFile::Open( (header+"_SUSYskimmed1.root").c_str() , "RECREATE");
-  TFile *outfile2 = TFile::Open( (header+"_SUSYskimmed2.root").c_str() , "RECREATE");
-  TFile *outfile3 = TFile::Open( (header+"_SUSYskimmed3.root").c_str(), "RECREATE");
+  if (sample.find("T1") != string::npos)
+    {
+      TFile *outfile1 = TFile::Open( (header+"_mg1700_mx1400.root").c_str() , "RECREATE");
+      TTree* susy1 = chain->CopyTree( "( (GenSusyMScan1 == 1700) && ( GenSusyMScan2 == 1400) ) " );      
+      susy1->Write();
+      outfile1->Close();
 
-  TTree* susy1 = chain->CopyTree( "( (GenSusyMScan1 == 1000) && ( GenSusyMScan2 == 900) ) " );
-  TTree* susy2 = chain->CopyTree( "( (GenSusyMScan1 == 2200) && ( GenSusyMScan2 == 100) ) " );
-  TTree* susy3 = chain->CopyTree( "( (GenSusyMScan1 == 1400) && ( GenSusyMScan2 == 1200) ) " );
+      TFile *outfile2 = TFile::Open( (header+"_mg2200_mx200.root").c_str() , "RECREATE");      
+      TTree* susy2 = chain->CopyTree( "( (GenSusyMScan1 == 2200) && ( GenSusyMScan2 == 200) ) " );
+      outfile2->cd();
+      susy2->Write();
+      outfile2->Close();
+    }
+  else if (sample.find("T2cc") != string::npos)
+    {
+      TFile *outfile1 = TFile::Open( (header+"_mst600_mx550.root").c_str() , "RECREATE");
+      
+      TTree* susy1 = chain->CopyTree( "( (GenSusyMScan1 == 600) && ( GenSusyMScan2 == 550) ) " );
+            
+      outfile1->cd();
+      susy1->Write();
+      outfile1->Close();
+      
+    }
+  else if (sample.find("T2") != string::npos)
+    {
+      TFile *outfile1 = TFile::Open( (header+"_mst800_mx600.root").c_str() , "RECREATE");
+      TTree* susy1 = chain->CopyTree( "( (GenSusyMScan1 == 800) && ( GenSusyMScan2 == 600) ) " );      
+      susy1->Write();
+      outfile1->Close();
+      
+      TFile *outfile2 = TFile::Open( (header+"_mst1200_mx200.root").c_str() , "RECREATE");
+      TTree* susy2 = chain->CopyTree( "( (GenSusyMScan1 == 1200) && ( GenSusyMScan2 == 200) ) " );
+      susy2->Write();
+      outfile2->Close();
+    }
 
-  outfile1->cd();
-  susy1->Write();
-  outfile1->Close();
-
-  outfile2->cd();
-  susy2->Write();
-  outfile2->Close();
-
-  outfile3->cd();
-  susy3->Write();
-  outfile3->Close();
 }
 
 void skim ()
@@ -70,9 +88,8 @@ void skim ()
     }
   if (input_given)
     {
-      SeekMassPoints(chain, output_file_name);
-      //skim_low_met(chain,output_file_name);
-      //skim_SUSY_signal(chain,output_file_name);
+      skim_low_met(chain,output_file_name);
+      skim_SUSY_signal(chain,output_file_name);
       return;
     }
   else
