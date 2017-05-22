@@ -129,7 +129,7 @@ int main ()
 	    {
 	      TH1F* hist_1d = new TH1F(*h1);
 	      hist_1d->SetDirectory(0);
-	      if (name.find("T") == string::npos) // background
+	      if (file_name.find("T") == string::npos) // background
 		{
 		  hist_1d->SetFillColor(kColor);
 		  hist_1d->SetLineColor(kColor);
@@ -377,121 +377,120 @@ int main ()
 
   for (map< string, TH1F* >::iterator it = hist_list_sig.begin(); it != hist_list_sig.end(); ++it)
     {
-      TH1F * sig_hist = (*it).second;
       string sig_name = (*it).first;
       
       // overlay (THStack * hs, TLegend * tl; TH1 * sig_hist, TCanvas& c, string type)
       if (sig_name.find("mt2_nocut") != string::npos)
 	{
-	  overlay(hs_mt2_nocut, mt2_nc_leg, sig_hist, c1, "mt2_nocut");
+	  overlay(hs_mt2_nocut, mt2_nc_leg, sig_name, c1, "mt2_nocut");
 	}
       else if (sig_name.find("mt2_trigger") != string::npos)
 	{
-	  overlay(hs_mt2_trigger, mt2_trig_leg, sig_hist, c1, "mt2_trigger");
+	  overlay(hs_mt2_trigger, mt2_trig_leg, sig_name, c1, "mt2_trigger");
 	}
       else if (sig_name.find("mt2_nm1") != string::npos)
 	{
-	  overlay(hs_mt2_nm1, mt2_nm1_leg, sig_hist, c1, "mt2_nm1");
+	  overlay(hs_mt2_nm1, mt2_nm1_leg, sig_name, c1, "mt2_nm1");
 	}
       else if (sig_name.find("ht_nocut") != string::npos)
 	{
-	  overlay(hs_ht_nocut, ht_nc_leg, sig_hist, c1, "ht_nocut");
+	  overlay(hs_ht_nocut, ht_nc_leg, sig_name, c1, "ht_nocut");
 	}
       else if (sig_name.find("ht_trigger") != string::npos)
 	{
-	  overlay(hs_ht_trigger, ht_trig_leg, sig_hist, c1, "ht_trigger");
+	  overlay(hs_ht_trigger, ht_trig_leg, sig_name, c1, "ht_trigger");
 	}
       else if (sig_name.find("dphi_nocut") != string::npos)
 	{
-	  overlay(hs_dphi_nocut, dphi_nc_leg, sig_hist, c1, "dphi_nocut");
+	  overlay(hs_dphi_nocut, dphi_nc_leg, sig_name, c1, "dphi_nocut");
 	}
       else if (sig_name.find("dphi_trigger") != string::npos)
 	{
-	  overlay(hs_dphi_trigger, dphi_trig_leg, sig_hist, c1, "dphi_trigger");
+	  overlay(hs_dphi_trigger, dphi_trig_leg, sig_name, c1, "dphi_trigger");
 	}
       else if (sig_name.find("dphi_nm1") != string::npos)
 	{
-	  overlay(hs_dphi_nm1, dphi_nm1_leg, sig_hist, c1, "dphi_nm1");
+	  overlay(hs_dphi_nm1, dphi_nm1_leg, sig_name, c1, "dphi_nm1");
 	}
       else if (sig_name.find("diff_nocut") != string::npos)
 	{
-	  overlay(hs_diff_nocut, diff_nc_leg, sig_hist, c1, "diff_nocut");
+	  overlay(hs_diff_nocut, diff_nc_leg, sig_name, c1, "diff_nocut");
 	}
       else if (sig_name.find("diff_trigger") != string::npos)
 	{
-	  overlay(hs_diff_trigger, diff_trig_leg, sig_hist, c1, "diff_trigger");
+	  overlay(hs_diff_trigger, diff_trig_leg, sig_name, c1, "diff_trigger");
 	}
       else if (sig_name.find("dom_nocut") != string::npos)
 	{
-	  overlay(hs_dom_nocut, dom_nc_leg, sig_hist, c1, "dom_nocut");
+	  overlay(hs_dom_nocut, dom_nc_leg, sig_name, c1, "dom_nocut");
 	}
       else if (sig_name.find("dom_trigger") != string::npos)
 	{
-	  overlay(hs_dom_trigger, dom_trig_leg, sig_hist, c1, "dom_trigger");
+	  overlay(hs_dom_trigger, dom_trig_leg, sig_name, c1, "dom_trigger");
 	}
       else if (sig_name.find("dom_nm1") != string::npos)
 	{
-	  overlay(hs_dom_nm1, dom_nm1_leg, sig_hist, c1, "dom_nm1");
+	  overlay(hs_dom_nm1, dom_nm1_leg, sig_name, c1, "dom_nm1");
 	}
       else if (sig_name.find("njet_nocut") != string::npos)
 	{
-	  overlay(hs_njet_nocut, njet_nc_leg, sig_hist, c1, "njet_nocut");
+	  overlay(hs_njet_nocut, njet_nc_leg, sig_name, c1, "njet_nocut");
 	}
       else if (sig_name.find("njet_trigger") != string::npos)
 	{
-	  overlay(hs_njet_trigger, njet_trig_leg, sig_hist, c1, "njet_trigger");
+	  overlay(hs_njet_trigger, njet_trig_leg, sig_name, c1, "njet_trigger");
 	}
       else if (sig_name.find("njet_nm1") != string::npos)
 	{
-	  overlay(hs_njet_nm1, njet_nm1_leg, sig_hist, c1, "njet_nm1");
+	  overlay(hs_njet_nm1, njet_nm1_leg, sig_name, c1, "njet_nm1");
 	}
       else if (sig_name.find("bjet_nocut") != string::npos)
 	{
-	  overlay(hs_bjet_nocut, bjet_nc_leg, sig_hist, c1, "bjet_nocut");
+	  overlay(hs_bjet_nocut, bjet_nc_leg, sig_name, c1, "bjet_nocut");
 	}
       else if (sig_name.find("bjet_trigger") != string::npos)
 	{
-	  overlay(hs_bjet_trigger, bjet_trig_leg, sig_hist, c1, "bjet_trigger");
+	  overlay(hs_bjet_trigger, bjet_trig_leg, sig_name, c1, "bjet_trigger");
 	}
      else if (sig_name.find("nlep_nocut") != string::npos)
 	{
-	  overlay(hs_nlep_nocut, nlep_nc_leg, sig_hist, c1, "nlep_nocut");
+	  overlay(hs_nlep_nocut, nlep_nc_leg, sig_name, c1, "nlep_nocut");
 	}
       else if (sig_name.find("nlep_trigger") != string::npos)
 	{
-	  overlay(hs_nlep_trigger, nlep_trig_leg, sig_hist, c1, "nlep_trigger");
+	  overlay(hs_nlep_trigger, nlep_trig_leg, sig_name, c1, "nlep_trigger");
 	}
       else if (sig_name.find("nlep_nm1") != string::npos)
 	{
-	  overlay(hs_nlep_nm1, nlep_nm1_leg, sig_hist, c1, "nlep_nm1");
+	  overlay(hs_nlep_nm1, nlep_nm1_leg, sig_name, c1, "nlep_nm1");
 	}
      else if (sig_name.find("nll_nocut") != string::npos)
 	{
-	  overlay(hs_nll_nocut, nll_nc_leg, sig_hist, c1, "nll_nocut");
+	  overlay(hs_nll_nocut, nll_nc_leg, sig_name, c1, "nll_nocut");
 	}
-      else if (sig_name.find("nlep_trigger") != string::npos)
+      else if (sig_name.find("nll_trigger") != string::npos)
 	{
-	  overlay(hs_nll_trigger, nll_trig_leg, sig_hist, c1, "nll_trigger");
+	  overlay(hs_nll_trigger, nll_trig_leg, sig_name, c1, "nll_trigger");
 	}
       else if (sig_name.find("nll_nm1") != string::npos)
 	{
-	  overlay(hs_nll_nm1, nll_nm1_leg, sig_hist, c1, "nll_nm1");
+	  overlay(hs_nll_nm1, nll_nm1_leg, sig_name, c1, "nll_nm1");
 	}
       else if (sig_name.find("lowmt_nocut") != string::npos)
 	{
-	  overlay(hs_lowmt_nocut, lowmt_nc_leg, sig_hist, c1, "lowmt_nocut");
+	  overlay(hs_lowmt_nocut, lowmt_nc_leg, sig_name, c1, "lowmt_nocut");
 	}
       else if (sig_name.find("lowmt_trigger") != string::npos)
 	{
-	  overlay(hs_lowmt_trigger, lowmt_trig_leg, sig_hist, c1, "lowmt_trigger");
+	  overlay(hs_lowmt_trigger, lowmt_trig_leg, sig_name, c1, "lowmt_trigger");
 	}
       else if (sig_name.find("lowmt_nm1") != string::npos)
 	{
-	  overlay(hs_lowmt_nm1, lowmt_nm1_leg, sig_hist, c1, "lowmt_nm1");
+	  overlay(hs_lowmt_nm1, lowmt_nm1_leg, sig_name, c1, "lowmt_nm1");
 	}
       else
 	{
-	  cout << "signal histogram not recognized: " << sig_name << endl;
+	  cout << "ignoring histogram: " << sig_name << endl;
 	}
     }
 }
@@ -503,14 +502,14 @@ void CopyAxes (THStack * hs, TH1* h, TCanvas& c)
   c.Modified();
 } 
 
-void overlay (THStack * hs, TLegend * tl, TH1F * sig_hist, TCanvas& c, string type)
+void overlay (THStack * hs, TLegend * tl, string sig_name, TCanvas& c, string type)
 {
   hs->Draw();
   tl->Draw();
+  TH1F* sig_hist = hist_list_sig.at(sig_name);
   CopyAxes(hs, hist_list_1D.at("zinv_h_"+type), c);
   sig_hist->Draw("sameE");
-  string sig_name = sig_hist->GetName();
-  c.Print( ("PDFs/"+sig_name+"_"+type+".pdf").c_str() );
+  c.Print( ("PDFs/"+sig_name+".pdf").c_str() );
 }
 
  
