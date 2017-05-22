@@ -504,6 +504,7 @@ void CopyAxes (THStack * hs, TH1* h, TCanvas& c)
 
 void overlay (THStack * hs, TLegend * tl, string sig_name, TCanvas& c, string type)
 {
+  hs->SetMinimum(0.00001); // guarantee that signal points will show up
   hs->Draw();
   tl->Draw();
   TH1F* sig_hist = hist_list_sig.at(sig_name);
