@@ -508,7 +508,7 @@ void overlay (THStack * hs, TLegend * tl, string sig_name, TCanvas& c, string ty
   hs->Draw();
   tl->Draw();
   TH1F* sig_hist = hist_list_sig.at(sig_name);
-  sig_hist->SetMarkerStyle(kDot);
+  sig_hist->SetMarkerStyle(kFullDotLarge);
   sig_hist->SetMarkerSize(0.625);
   CopyAxes(hs, hist_list_1D.at("zinv_h_"+type), c);
   sig_hist->Draw("sameEP");
