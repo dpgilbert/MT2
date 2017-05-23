@@ -105,7 +105,7 @@ int main ()
       else if (file_name.find("wjets") != string::npos) kColor = kBlue-7;
 
       else if (file_name.find("dyjets") != string::npos) kColor = kMagenta;
-      else if (file_name.find("zinv") != string::npos)   kColor = kMagenta-7;
+      else if (file_name.find("zinv") != string::npos)   kColor = kMagenta+3;
       // else is signal
 
       for (TObjLink* link = gDirectory->GetListOfKeys()->FirstLink(); link != NULL; link = link->Next())
