@@ -6,7 +6,7 @@ OBJECTS=$(SOURCES:.cc=.o)
 
 LIB=libLeptonVetoLooper.so
 
-EXE = LeptonVetoLooper
+EXE = LeptonVetoLooper.exe
 
 $(LIB): $(OBJECTS)
 	$(LD) $(LDFLAGS) $(SOFLAGS) $(OBJECTS) $(ROOTLIBS) -o $@
