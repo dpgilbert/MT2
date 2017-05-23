@@ -73,6 +73,8 @@ int main ()
   gStyle->SetOptStat(0);
   // Use a single canvas for all prints
   TCanvas c1("c1_print_temp", "temp printer");
+  // Need this voodoo to avoid cutting off the legend in 2D plots
+  c1.SetRightMargin(0.13);
   c1.cd();
 
   for (vector<string>::iterator it = file_list.begin(); it != file_list.end(); ++it)
@@ -121,7 +123,7 @@ int main ()
 		{
 		  // just print 2D histograms without stacking
 		  h2->Draw("colz");
-		  c1.Print( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
+		  c1.SaveAs( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
 		}
 	      else cout << "name matched TH2F but cast failed" << endl;
 	    }
@@ -512,7 +514,7 @@ void overlay (THStack * hs, TLegend * tl, string sig_name, TCanvas& c, string ty
   sig_hist->SetMarkerSize(0.625);
   CopyAxes(hs, hist_list_1D.at("zinv_h_"+type), c);
   sig_hist->Draw("sameEP");
-  c.Print( ("PDFs/"+sig_name+".pdf").c_str() );
+  c.SaveAs( ("PDFs/"+sig_name+".pdf").c_str() );
 }
 
  
