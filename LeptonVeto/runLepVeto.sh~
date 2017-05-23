@@ -1,0 +1,8 @@
+#!/bin/bash
+
+<<<<<<< HEAD
+eval 'nohup nice -n 10 ./LeptonVetoLooper < ../UnskimmedRunLists/ttdl.txt >& ttdl_log.txt &'
+=======
+eval 'nohup nice -n 10 ./LeptonVetoLooper.exe < ../UnskimmedRunLists/ttdl.txt >& ttdl_log.txt &'
+>>>>>>> c5bc5eb68869c2ba4d34e00e4aaeb201bfd5cae0
+
