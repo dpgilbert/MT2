@@ -13,7 +13,7 @@ using namespace std;
 
 void skim_low_met (TChain* chain, const string& sample)
 {
-  TFile *outfile = TFile::Open( (sample+"_LowMETEvents.root").c_str() , "RECREATE");
+  TFile *outfile = TFile::Open( ("LowMETEvents/"+sample+"_LowMETEvents.root").c_str() , "RECREATE");
 
   // events with MET < 1 GeV
   TTree* LowMETEvents = chain->CopyTree( "met_pt < 1.0" );
@@ -41,7 +41,7 @@ void skim_SUSY_signal (TChain* chain, const string& sample )
     }
   else if (sample.find("T2cc") != string::npos)
     {
-      TFile *outfile1 = TFile::Open( (header+"_mst600_mx550.root").c_str() , "RECREATE");
+      TFile *outfile1 = TFile::Open( (header+"_msq600_mx550.root").c_str() , "RECREATE");
       
       TTree* susy1 = chain->CopyTree( "( (GenSusyMScan1 == 600) && ( GenSusyMScan2 == 550) ) " );
             
@@ -52,12 +52,12 @@ void skim_SUSY_signal (TChain* chain, const string& sample )
     }
   else if (sample.find("T2") != string::npos)
     {
-      TFile *outfile1 = TFile::Open( (header+"_mst800_mx600.root").c_str() , "RECREATE");
+      TFile *outfile1 = TFile::Open( (header+"_msq800_mx600.root").c_str() , "RECREATE");
       TTree* susy1 = chain->CopyTree( "( (GenSusyMScan1 == 800) && ( GenSusyMScan2 == 600) ) " );      
       susy1->Write();
       outfile1->Close();
       
-      TFile *outfile2 = TFile::Open( (header+"_mst1200_mx200.root").c_str() , "RECREATE");
+      TFile *outfile2 = TFile::Open( (header+"_msq1200_mx200.root").c_str() , "RECREATE");
       TTree* susy2 = chain->CopyTree( "( (GenSusyMScan1 == 1200) && ( GenSusyMScan2 == 200) ) " );
       susy2->Write();
       outfile2->Close();

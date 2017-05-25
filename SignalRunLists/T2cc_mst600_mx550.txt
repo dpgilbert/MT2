@@ -1,2 +1,0 @@
-T2cc_mst600_mx550
-SkimmedSUSYSignal/T2cc_mst600_mx550.root

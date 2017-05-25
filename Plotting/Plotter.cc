@@ -57,15 +57,17 @@ int main ()
   file_list.push_back("T1qqqq_mg2200_mx200");
   file_list.push_back("T1tttt_mg1700_mx1400");
   file_list.push_back("T1tttt_mg2200_mx200");
-  file_list.push_back("T2bW_mst1200_mx200");
-  file_list.push_back("T2bW_mst800_mx600");
-  file_list.push_back("T2bb_mst1200_mx200");
-  file_list.push_back("T2bb_mst800_mx600");
-  file_list.push_back("T2bt_mst1200_mx200");
-  file_list.push_back("T2bt_mst800_mx600");
-  file_list.push_back("T2qq_mst1200_mx200");
-  file_list.push_back("T2qq_mst800_mx600");
-  file_list.push_back("T2cc_mst600_mx550");
+  file_list.push_back("T2bW_msq1200_mx200");
+  file_list.push_back("T2bW_msq800_mx600");
+  file_list.push_back("T2bb_msq1200_mx200");
+  file_list.push_back("T2bb_msq800_mx600");
+  file_list.push_back("T2tt_msq1200_mx200");
+  file_list.push_back("T2tt_msq800_mx600");
+  file_list.push_back("T2bt_msq1200_mx200");
+  file_list.push_back("T2bt_msq800_mx600");
+  file_list.push_back("T2qq_msq1200_mx200");
+  file_list.push_back("T2qq_msq800_mx600");
+  file_list.push_back("T2cc_msq600_mx550");
 
   // Legend location parameters
   Double_t x1 = 0.8, x2 = x1+0.2, y1 = 0.5, y2 = y1+0.4;
@@ -137,7 +139,7 @@ int main ()
 		  hist_1d->SetLineColor(kColor);
 		  hist_list_1D[file_name+"_"+name] = hist_1d;
 		}
-	      else hist_list_sig[file_name+"_"+name] = hist_1d;
+	      else hist_list_sig[file_name+"_"+name] = hist_1d; // signal
 
 	    }
 	  else
@@ -506,7 +508,7 @@ void CopyAxes (THStack * hs, TH1* h, TCanvas& c)
 
 void overlay (THStack * hs, TLegend * tl, string sig_name, TCanvas& c, string type)
 {
-  hs->SetMinimum(0.00001); // guarantee that signal points will show up
+  hs->SetMinimum(0.0001); // guarantee that signal points will show up
   hs->Draw();
   tl->Draw();
   TH1F* sig_hist = hist_list_sig.at(sig_name);

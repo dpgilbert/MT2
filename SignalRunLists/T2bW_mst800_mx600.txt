@@ -1,2 +1,0 @@
-T2bW_mst800_mx600
-SkimmedSUSYSignal/T2bW_mst800_mx600.root

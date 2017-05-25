@@ -53,19 +53,19 @@ void PlotLoop (const TChain& chain, const string& output_file_name)
 
   TH1::SetDefaultSumw2(true);
 
-  int n_mt2_bins = 200;
+  int n_mt2_bins = 50;
   float mt2_min = 0;
   float mt2_max = 1000;
-  int n_ht_bins = 400;
+  int n_ht_bins = 200;
   float ht_min = 0;
   float ht_max = 4000;
-  int n_dphi_bins = 50;
+  int n_dphi_bins = 25;
   float dphi_min = 0;
   float dphi_max = 3.2;
-  int n_diff_bins = 100;
+  int n_diff_bins = 150;
   float diff_min = 0;
   float diff_max = 1000;
-  int n_dom_bins = 20;
+  int n_dom_bins = 10;
   float dom_min = 0;
   float dom_max_nc = 600;
   float dom_max_nm1 = 1;
@@ -73,7 +73,7 @@ void PlotLoop (const TChain& chain, const string& output_file_name)
   int n_njet_bins = 12;
   float njet_min = 0;
   float njet_max = 12;
-  int n_met_bins = 200;
+  int n_met_bins = 100;
   float met_min = 0;
   float met_max = 2000;
   int n_bjet_bins = 7;
@@ -213,7 +213,7 @@ void PlotLoop (const TChain& chain, const string& output_file_name)
   
   for( unsigned int event = 0; event < nMax; event++)
     {
-      if ( (event+1) % 1000 == 0) cout << "Processing event " << event+1 << endl;
+      if ( (event+1) % 10000 == 0) cout << "Processing event " << event+1 << ", " << (100. * event) / nMax << "% complete" << endl;
       
       mt2_tree.GetEntry(event);
       
