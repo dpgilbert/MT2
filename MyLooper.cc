@@ -217,7 +217,7 @@ void PlotLoop (const TChain& chain, const string& output_file_name)
       
       mt2_tree.GetEntry(event);
       
-      float w_ = mt2_tree.evt_scale1fb;
+      float w_ = 1000. * (mt2_tree.evt_xsec / mt2_tree.fChain->GetEntries()); // manual evt_scale1fb since signal scale1fb is broken
       float mt2_ = mt2_tree.mt2;
       float ht_ =  mt2_tree.ht;
       float dphi_ = mt2_tree.deltaPhiMin;
