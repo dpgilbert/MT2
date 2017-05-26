@@ -57,15 +57,17 @@ int main ()
   file_list.push_back("T1qqqq_mg2200_mx200");
   file_list.push_back("T1tttt_mg1700_mx1400");
   file_list.push_back("T1tttt_mg2200_mx200");
-  file_list.push_back("T2bW_mst1200_mx200");
-  file_list.push_back("T2bW_mst800_mx600");
-  file_list.push_back("T2bb_mst1200_mx200");
-  file_list.push_back("T2bb_mst800_mx600");
-  file_list.push_back("T2bt_mst1200_mx200");
-  file_list.push_back("T2bt_mst800_mx600");
-  file_list.push_back("T2qq_mst1200_mx200");
-  file_list.push_back("T2qq_mst800_mx600");
-  file_list.push_back("T2cc_mst600_mx550");
+  file_list.push_back("T2bW_msq1200_mx200");
+  file_list.push_back("T2bW_msq800_mx600");
+  file_list.push_back("T2bb_msq1200_mx200");
+  file_list.push_back("T2bb_msq800_mx600");
+  file_list.push_back("T2tt_msq1200_mx200");
+  file_list.push_back("T2tt_msq800_mx600");
+  file_list.push_back("T2bt_msq1200_mx200");
+  file_list.push_back("T2bt_msq800_mx600");
+  file_list.push_back("T2qq_msq1200_mx200");
+  file_list.push_back("T2qq_msq800_mx600");
+  file_list.push_back("T2cc_msq600_mx550");
 
   // Legend location parameters
   Double_t x1 = 0.8, x2 = x1+0.2, y1 = 0.5, y2 = y1+0.4;
@@ -73,6 +75,8 @@ int main ()
   gStyle->SetOptStat(0);
   // Use a single canvas for all prints
   TCanvas c1("c1_print_temp", "temp printer");
+  // Need this voodoo to avoid cutting off the legend in 2D plots
+  c1.SetRightMargin(0.13);
   c1.cd();
 
   for (vector<string>::iterator it = file_list.begin(); it != file_list.end(); ++it)
@@ -121,7 +125,7 @@ int main ()
 		{
 		  // just print 2D histograms without stacking
 		  h2->Draw("colz");
-		  c1.Print( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
+		  c1.SaveAs( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
 		}
 	      else cout << "name matched TH2F but cast failed" << endl;
 	    }
@@ -135,7 +139,7 @@ int main ()
 		  hist_1d->SetLineColor(kColor);
 		  hist_list_1D[file_name+"_"+name] = hist_1d;
 		}
-	      else hist_list_sig[file_name+"_"+name] = hist_1d;
+	      else hist_list_sig[file_name+"_"+name] = hist_1d; // signal
 
 	    }
 	  else
@@ -504,7 +508,7 @@ void CopyAxes (THStack * hs, TH1* h, TCanvas& c)
 
 void overlay (THStack * hs, TLegend * tl, string sig_name, TCanvas& c, string type)
 {
-  hs->SetMinimum(0.00001); // guarantee that signal points will show up
+  hs->SetMinimum(0.0001); // guarantee that signal points will show up
   hs->Draw();
   tl->Draw();
   TH1F* sig_hist = hist_list_sig.at(sig_name);
@@ -512,7 +516,7 @@ void overlay (THStack * hs, TLegend * tl, string sig_name, TCanvas& c, string ty
   sig_hist->SetMarkerSize(0.625);
   CopyAxes(hs, hist_list_1D.at("zinv_h_"+type), c);
   sig_hist->Draw("sameEP");
-  c.Print( ("PDFs/"+sig_name+".pdf").c_str() );
+  c.SaveAs( ("PDFs/"+sig_name+".pdf").c_str() );
 }
 
  
