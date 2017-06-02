@@ -77,6 +77,7 @@ int main ()
   TCanvas c1("c1_print_temp", "temp printer");
   // Need this voodoo to avoid cutting off the legend in 2D plots
   c1.SetRightMargin(0.13);
+  c1.SetLogz();
   c1.cd();
 
   for (vector<string>::iterator it = file_list.begin(); it != file_list.end(); ++it)
@@ -123,8 +124,14 @@ int main ()
 	    {
 	      if ( TH2F* h2 = dynamic_cast<TH2F*>(gDirectory->Get(name.c_str()) ) )
 		{
-		  // just print 2D histograms without stacking
+		  // set minimum z axis value to the next lowest order of magnitude
+		  double min_log = log10( h2->GetMinimum(0.0) );
+		  cout << "min_log is: " << min_log << endl;
+		  int mag = floor ( min_log );
+		  cout << "setting min to: pow(10.0, " << min(mag,-1) << ")" << endl;
+		  h2->SetMinimum( pow(10.0, min(mag,-1)) );
 		  h2->Draw("colz");
+		  // just print 2D histograms without stacking
 		  c1.SaveAs( ("PDFs/"+file_name+"_"+name+".pdf").c_str() );
 		}
 	      else cout << "name matched TH2F but cast failed" << endl;
@@ -212,7 +219,7 @@ int main ()
   THStack *hs_lowmt_trigger = new THStack("hs_lowmt_trigger", "Stacked Post-Trigger nPFLep5LowMT Distribution");
   THStack *hs_lowmt_nm1 = new THStack("hs_lowmt_nm1", "Stacked nPFLep5LowMT Distribution, All Other Cuts Applied");
 
-  // Set c1 y axis to log for printing 1D histograms
+  // Set c1 y axis to log
   c1.SetLogy();
 
   // Legends
