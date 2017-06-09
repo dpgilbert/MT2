@@ -22,6 +22,7 @@ TH1F* GetDataDrivenHist (const string& filename, const string& SR_key)
   TDirectoryFile * tdf = (TDirectoryFile *) tf->Get( ("sr"+SR_key).c_str());
   TH1F* toReturn = (TH1F*) (tdf->Get("h_mt2bins"))->Clone();
   toReturn->SetDirectory(0);
+  toReturn->SetTitle( Form("Data Driven %s SR %s M_{T2}", filename.c_str(), SR_key.c_str()) );
   tf->Close();
   return toReturn;
 }
@@ -32,6 +33,8 @@ TH1F* GetMonteCarloHist (const string& filename, const string& SR_key)
   TFile * tf = TFile::Open(file);
   TH1F* toReturn = (TH1F*) (tf->Get(SR_key.c_str()))->Clone();
   toReturn->SetDirectory(0);
+  toReturn->SetTitle( Form("Monte Carlo %s SR %s M_{T2}", filename.c_str(), SR_key.c_str()) );
+  toReturn->Scale(35.9); // 35.9 fb^-1
   tf->Close();
   return toReturn;
 }
@@ -50,20 +53,20 @@ int main (int argc, char ** argv)
   gStyle->SetOptStat(0);
   TCanvas c1("c1_print_temp", "temp printer");
   c1.SetLogy();
-  Double_t x1 = 0.8, x2 = x1+0.2, y1 = 0.5, y2 = y1+0.4;
+  Double_t x1 = 0.6, x2 = x1+0.35, y1 = 0.7, y2 = y1+0.2;
   for (unsigned int i = 0; i < 63; i++)
     {
       TH1F* dd_qcd = GetDataDrivenHist("qcdFromCRs", sr_key[i]);    
       TH1F* mc_qcd = GetMonteCarloHist("qcd_ht", sr_key[i]);
       mc_qcd->SetLineColor(kRed);
-      TLegend * tl_qcd = new TLegend(x1, x2, y1, y2);
+      TLegend * tl_qcd = new TLegend(x1, y1, x2, y2);
       tl_qcd->AddEntry(dd_qcd);
       tl_qcd->AddEntry(mc_qcd);
       
       TH1F* dd_ll = GetDataDrivenHist("lostlepFromCRs", sr_key[i]);
       TH1F* mc_ll = GetMonteCarloHist("lostlepton", sr_key[i]);
       mc_ll->SetLineColor(kRed);
-      TLegend * tl_ll = new TLegend(x1, x2, y1, y2);
+      TLegend * tl_ll = new TLegend(x1, y1, x2, y2);
       tl_ll->AddEntry(dd_ll);
       tl_ll->AddEntry(mc_ll);
       
@@ -84,27 +87,51 @@ int main (int argc, char ** argv)
       TH1F* mc_z = GetMonteCarloHist("zinv_ht", sr_key[i]);
 
       mc_z->SetLineColor(kRed);
-      TLegend * tl_z = new TLegend(x1, x2, y1, y2);
+      TLegend * tl_z = new TLegend(x1, y1, x2, y2);
       if (i != 42) tl_z->AddEntry(dd_zdy);
-      if (i != 17) tl_z->AddEntry(dd_zgj);
+      if (i != 17 && i < 50) tl_z->AddEntry(dd_zgj);
       tl_z->AddEntry(mc_z);
 
-      mc_qcd->Draw();
-      dd_qcd->Draw("same");
+      double MaxToSet, MinToSet;
+      
+      MaxToSet = max(mc_qcd->GetMaximum(), dd_qcd->GetMaximum());
+      MinToSet = min(mc_qcd->GetMinimum(), dd_qcd->GetMinimum());
+      mc_qcd->SetMaximum( 10 * MaxToSet );
+      mc_qcd->SetMinimum( MinToSet > 0 ? MinToSet / 10 : 0.0001);
+      mc_qcd->SetTitle("QCD M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}");
+      mc_qcd->Draw("E1E0");
+      dd_qcd->Draw("E1E0 same");
       tl_qcd->Draw();
       c1.SaveAs( ("PDFs/qcd_estimates_"+sr_key[i]+".pdf").c_str() );
 
-      mc_ll->Draw();
-      dd_ll->Draw("same");
+      MaxToSet = max(mc_ll->GetMaximum(), dd_ll->GetMaximum());
+      MinToSet = min(mc_ll->GetMinimum(), dd_ll->GetMinimum());
+      mc_ll->SetMaximum( 10 * MaxToSet ); 
+      mc_ll->SetMinimum( MinToSet > 0 ? MinToSet / 10 : 0.0001);
+      mc_ll->SetTitle("Lost Lepton M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}");
+      mc_ll->Draw("E1E0");
+      dd_ll->Draw("E1E0 same");
       tl_ll->Draw();
       c1.SaveAs( ("PDFs/lostlep_estimates_"+sr_key[i]+".pdf").c_str() );
       
-      mc_z->Draw();
+      double zdy_max = 0.0, zgj_max = 0.0, zdy_min = FLT_MAX, zgj_min = FLT_MAX;
+      if (i != 42) zdy_max = dd_zdy->GetMaximum();
+      if (i != 17 && i < 50) zgj_max = dd_zgj->GetMaximum();
+      MaxToSet = max( mc_z->GetMaximum(), max(zdy_max, zgj_max));
+      MinToSet = min( mc_z->GetMinimum(), min(zdy_min, zgj_min));
+      mc_z->SetMaximum( 10 * MaxToSet );
+      mc_z->SetMinimum( MinToSet > 0 ? MinToSet / 10 : 0.0001);
+      mc_z->SetTitle("Z->#nu#nu M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}");
+      mc_z->Draw("E1E0");
       // see comments above
-      if (i != 42) dd_zdy->Draw("same");
-      if (i != 17 && i < 50) dd_zgj->Draw("same");
+      if (i != 42) dd_zdy->Draw("E1E0 same");
+      if (i != 17 && i < 50) dd_zgj->Draw("E1E0 same");
       tl_z->Draw();
       c1.SaveAs( ("PDFs/zinv_estimates_"+sr_key[i]+".pdf").c_str() );
+
+      // ratio plots
+
+
     }
   
 }

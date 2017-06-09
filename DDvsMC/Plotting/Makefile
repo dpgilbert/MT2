@@ -13,7 +13,7 @@ $(LIB): $(OBJECTS)
 
 $(EXE): $(LIB) 
 	echo "$(CXX) -o $@ $(LIB) $(ROOTLIBS) -Wl,-rpath,./"; \
-	$(CXX) -O2 -o $@ $(LIB) $(ROOTLIBS) -Wl,-rpath,./	
+	$(CXX) -o $@ $(LIB) $(ROOTLIBS) -Wl,-rpath,./	
 
 %.o:  %.cc
 	$(CXX) $(CXXFLAGS) -c $< -o $@
