@@ -52,7 +52,6 @@ int main (int argc, char ** argv)
   // turn off stat box
   gStyle->SetOptStat(0);
   TCanvas c1("c1_print_temp", "temp printer");
-  c1.SetLogy();
   Double_t x1 = 0.6, x2 = x1+0.35, y1 = 0.7, y2 = y1+0.2;
   for (unsigned int i = 0; i < 63; i++)
     {
@@ -92,15 +91,17 @@ int main (int argc, char ** argv)
       if (i != 17 && i < 50) tl_z->AddEntry(dd_zgj);
       tl_z->AddEntry(mc_z);
 
+      c1.SetLogy(true);
+
       double MaxToSet, MinToSet;
       
       MaxToSet = max(mc_qcd->GetMaximum(), dd_qcd->GetMaximum());
       MinToSet = min(mc_qcd->GetMinimum(), dd_qcd->GetMinimum());
       mc_qcd->SetMaximum( 10 * MaxToSet );
       mc_qcd->SetMinimum( MinToSet > 0 ? MinToSet / 10 : 0.0001);
-      mc_qcd->SetTitle("QCD M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}");
-      mc_qcd->Draw("E1E0");
-      dd_qcd->Draw("E1E0 same");
+      mc_qcd->SetTitle( Form("SR %s QCD M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}", sr_key[i].c_str()));
+      mc_qcd->Draw("E1");
+      dd_qcd->Draw("E1 same");
       tl_qcd->Draw();
       c1.SaveAs( ("PDFs/qcd_estimates_"+sr_key[i]+".pdf").c_str() );
 
@@ -108,9 +109,9 @@ int main (int argc, char ** argv)
       MinToSet = min(mc_ll->GetMinimum(), dd_ll->GetMinimum());
       mc_ll->SetMaximum( 10 * MaxToSet ); 
       mc_ll->SetMinimum( MinToSet > 0 ? MinToSet / 10 : 0.0001);
-      mc_ll->SetTitle("Lost Lepton M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}");
-      mc_ll->Draw("E1E0");
-      dd_ll->Draw("E1E0 same");
+      mc_ll->SetTitle( Form("SR %s Lost Lepton M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}", sr_key[i].c_str()));
+      mc_ll->Draw("E1");
+      dd_ll->Draw("E1 same");
       tl_ll->Draw();
       c1.SaveAs( ("PDFs/lostlep_estimates_"+sr_key[i]+".pdf").c_str() );
       
@@ -121,17 +122,49 @@ int main (int argc, char ** argv)
       MinToSet = min( mc_z->GetMinimum(), min(zdy_min, zgj_min));
       mc_z->SetMaximum( 10 * MaxToSet );
       mc_z->SetMinimum( MinToSet > 0 ? MinToSet / 10 : 0.0001);
-      mc_z->SetTitle("Z->#nu#nu M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}");
-      mc_z->Draw("E1E0");
+      mc_z->SetTitle( Form("SR %s Z->#nu#nu M_{T2} Distributions;M_{T2} (GeV);Count @ 35.9 fb^{-1}", sr_key[i].c_str()));
+      mc_z->Draw("E1");
       // see comments above
-      if (i != 42) dd_zdy->Draw("E1E0 same");
-      if (i != 17 && i < 50) dd_zgj->Draw("E1E0 same");
+      if (i != 42) dd_zdy->Draw("E1 same");
+      if (i != 17 && i < 50) dd_zgj->Draw("E1 same");
       tl_z->Draw();
-      c1.SaveAs( ("PDFs/zinv_estimates_"+sr_key[i]+".pdf").c_str() );
+      c1.SaveAs( ("PDFs/zinv_estimates_"+sr_key[i]+".pdf").c_str() );      
 
       // ratio plots
+      c1.SetLogy( false );
+      mc_qcd->Divide(dd_qcd);
+      mc_qcd->SetMaximum( 5.0 );
+      mc_qcd->SetMinimum( 0 );
+      mc_qcd->SetTitle( Form("SR %s QCD M_{T2} Ratio;M_{T2} (GeV);MC/DD", sr_key[i].c_str() ));
+      mc_qcd->Draw("E1");
+      c1.SaveAs( ("PDFs/qcd_ratio_"+sr_key[i]+".pdf").c_str() );
+      
+      mc_ll->Divide(dd_ll);
+      mc_ll->SetMaximum( 5.0 );
+      mc_ll->SetMinimum( 0 );
+      mc_ll->SetTitle( Form("SR %s Lost Lepton M_{T2} Ratio;M_{T2} (GeV);MC/DD", sr_key[i].c_str()));
+      mc_ll->Draw("E1");
+      c1.SaveAs( ("PDFs/lostlep_ratio_"+sr_key[i]+".pdf").c_str() );
 
-
+      mc_z->SetMaximum(5.0);
+      mc_z->SetMinimum(0);
+      if (i != 42)
+	{
+	  TH1F * mc_z1 = (TH1F*) mc_z->Clone();
+	  mc_z1->Divide(dd_zdy);
+	  mc_z1->SetTitle( Form("SR %s Z->#nu#nu M_{T2} Ratio;M_{T2} (GeV);MC/DD (DY)", sr_key[i].c_str()));
+	  mc_z1->Draw("E1");
+	  c1.SaveAs( ("PDFs/zinv_ratio_dy_"+sr_key[i]+".pdf").c_str() );
+	}
+      if (i != 17 && i < 50)
+	{
+	  TH1F* mc_z2 = (TH1F*) mc_z->Clone();
+	  mc_z2->Divide(dd_zgj);
+	  mc_z2->SetTitle( Form("SR %s Z->#nu#nu M_{T2} Ratio;M_{T2} (GeV);MC/DD (GJ)", sr_key[i].c_str()));
+	  mc_z2->Draw("E1");
+	  c1.SaveAs( ("PDFs/zinv_ratio_gj_"+sr_key[i]+".pdf").c_str() );
+	}
+      
     }
   
 }
