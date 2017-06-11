@@ -49,10 +49,10 @@ int main (int argc, char ** argv)
 		       "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"};
 
   string sr_desc [63] = { "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} = [250, 450), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} = [250, 450), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} = [250, 450), MET >= 250", "12H_{T} = [250, 450), MET >= 250", "13H_{T} = [250, 450), MET >= 250", "14H_{T} = [250, 450), MET >= 250", "N_{jets} >= 2, N_{bjets} >= 3, H_{T} = [250, 450), MET >= 250",
-		       "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} = [450, 575), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} = [450, 575), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} = [450, 575), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 0, H_{T} = [450, 575), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 1, H_{T} = [450, 575), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 2, H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} = 0H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} = 1, H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} = 2, H_{T} = [450, 575), MET >= 250", "N_{jets} = [2, 7), N_{bjets} >= N_{jets} = [2, 4), N_{bjets} = 2, , H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} >= 3, H_{T} = [450, 575), MET >= 250",
+		       "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} = [450, 575), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} = [450, 575), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} = [450, 575), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 0, H_{T} = [450, 575), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 1, H_{T} = [450, 575), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 2, H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} = 0, H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} = 1, H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} = 2, H_{T} = [450, 575), MET >= 250", "N_{jets} = [2, 7), N_{bjets} >= 3, H_{T} = [450, 575), MET >= 250", "N_{jets} >= 7, N_{bjets} >= 3, H_{T} = [450, 575), MET >= 250",
 		       "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} = [575, 1000), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} = [575, 1000), MET >= 250", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} = [575, 1000), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 0, H_{T} = [575, 1000), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 1, H_{T} = [575, 1000), MET >= 250", "N_{jets} = [4, 7), N_{bjets} = 2, H_{T} = [575, 1000), MET >= 250", "N_{jets} >= 7, N_{bjets} = 0, H_{T} = [575, 1000), MET >= 250", "N_{jets} >= 7, N_{bjets} = 1, H_{T} = [575, 1000), MET >= 250", "N_{jets} >= 7, N_{bjets} = 2, H_{T} = [575, 1000), MET >= 250", "N_{jets} = [2, 7), N_{bjets} >= 3, H_{T} = [575, 1000), MET >= 250", "N_{jets} >= 7, N_{bjets} >= 3, H_{T} = [575, 1000), MET >= 250",
-		       "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 0, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 1, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 2, H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} = 0H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} = 1, H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} = 2, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [2, 7), N_{bjets} >= 3, H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} >= 3, H_{T} = [1000, 1500), MET >= 30",
-		       "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} >= 1500, MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} >= 1500, MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} >= 1500, MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 0, H_{T} >= 1500, MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 1, H_{T} >= 1500, MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 2, H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} = 0H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} = 1, H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} = 2, H_{T} >= 1500, MET >= 30", "N_{jets} = [2, 7), N_{bjets} >= 3, H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} >= 3, H_{T} >= 1500, MET >= 30",
+		       "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 0, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 1, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 2, H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} = 0, H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} = 1, H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} = 2, H_{T} = [1000, 1500), MET >= 30", "N_{jets} = [2, 7), N_{bjets} >= 3, H_{T} = [1000, 1500), MET >= 30", "N_{jets} >= 7, N_{bjets} >= 3, H_{T} = [1000, 1500), MET >= 30",
+		       "N_{jets} = [2, 4), N_{bjets} = 0, H_{T} >= 1500, MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 1, H_{T} >= 1500, MET >= 30", "N_{jets} = [2, 4), N_{bjets} = 2, H_{T} >= 1500, MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 0, H_{T} >= 1500, MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 1, H_{T} >= 1500, MET >= 30", "N_{jets} = [4, 7), N_{bjets} = 2, H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} = 0, H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} = 1, H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} = 2, H_{T} >= 1500, MET >= 30", "N_{jets} = [2, 7), N_{bjets} >= 3, H_{T} >= 1500, MET >= 30", "N_{jets} >= 7, N_{bjets} >= 3, H_{T} >= 1500, MET >= 30",
 		       "N_{jets} >= 2, HT >= 1000, MET >= 30", 
 			  "N_{jets} >= 2, H_{T} >= 1500, MET >= 30", 
 			  "N_{jets} >= 4, H_{T} >= 1000, MET >= 30", 
@@ -150,20 +150,20 @@ int main (int argc, char ** argv)
       // ratio plots
       c1.SetLogy( false );
       mc_qcd->Divide(dd_qcd);
-      mc_qcd->SetMaximum( 5.0 );
+      mc_qcd->SetMaximum( 3.0 );
       mc_qcd->SetMinimum( 0 );
       mc_qcd->SetTitle( Form("QCD %s M_{T2} Ratio;M_{T2} (GeV);MC/DD", sr_desc[i].c_str() ));
       mc_qcd->Draw("E1");
       c1.SaveAs( ("PDFs/qcd_ratio_"+sr_key[i]+".pdf").c_str() );
       
       mc_ll->Divide(dd_ll);
-      mc_ll->SetMaximum( 5.0 );
+      mc_ll->SetMaximum( 3.0 );
       mc_ll->SetMinimum( 0 );
       mc_ll->SetTitle( Form("Lost Lepton %s M_{T2} Ratio;M_{T2} (GeV);MC/DD", sr_desc[i].c_str()));
       mc_ll->Draw("E1");
       c1.SaveAs( ("PDFs/lostlep_ratio_"+sr_key[i]+".pdf").c_str() );
 
-      mc_z->SetMaximum(5.0);
+      mc_z->SetMaximum(3.0);
       mc_z->SetMinimum(0);
       if (i != 42)
 	{
