@@ -1,0 +1,288 @@
+\documentclass{beamer}
+\usepackage[absolute,overlay]{textpos}
+
+\geometry{paperwidth=140mm,paperheight=105mm}
+
+\title{Beyond the Chandrasekhar Limit in Carbon-Oxygen White Dwarf Mergers}
+\subtitle{Stellar Structure Final Presentation}
+\author{Dylan Gilbert}
+\institute[University of California, San Diego]
+
+\date{Fall 2016}
+
+%\AtBeginSubsection[]
+%{
+%\begin{frame}<beamer>{Outline}
+%  \tableofcontents[currentsection,currentsubsecton]
+%\end{frame}
+%}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Kepler supernova remnant (1604), a type Ia (Chandra)}
+\begin{center}\includegraphics[scale=0.4]{kepler}\end{center}
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\subsection{White Dwarf Basics}
+
+\begin{frame}{White Dwarfs (WDs)}{Basics}
+  \begin{itemize}
+  \item {Compact remnants of most stars ($M< 8M_{\odot}$).}
+  \item {Solitary WDs tend to have $M\sim 0.6M_{\odot}$, but binaries can have more variable masses due to mass transfer, e.g. Sirius B, $M=0.978M_{\odot}$.}
+  \item {Masses can be read off to high precision from pressure broadening of lines.}
+  \item {Supported by electron degeneracy pressure. Unstable above the Chandrasekhar mass, $M_{C} \sim 1.4M_{\odot}$. In a merger of Sirius B-sized WDs, 1+1=2 leads to catastrophic instability.}
+  \item {Small radius ($\sim$$R_E$), therefore low luminosity, but high temperature.}     
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{WDs}{HR Diagram}
+\begin{itemize}
+\item HR diagram from HW1Q3 of stellar spectral class points with 29 nearest stars plotted.
+\includegraphics[scale=0.4]{HRe}
+\begin{textblock*}{64mm}(15mm,0.7\textheight)
+\begin{exampleblock}{}
+  Sirius B
+\end{exampleblock}
+\end{textblock*}
+
+\begin{textblock*}{64mm}(32mm,0.75\textheight)
+\begin{exampleblock}{}
+  Procyon B
+\end{exampleblock}
+\end{textblock*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{WDs}{Sirius System}
+  \begin{itemize}
+  \item {In visible light, Sirius A is much brighter than Sirius B.}
+
+    \includegraphics[scale=0.15]{Siriusvis}
+
+    (Hubble image)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{WDs}{Sirius System}
+  \begin{itemize}
+    \item {In x-rays, Sirius B is much brighter than Sirius A.}
+    
+      \includegraphics[scale=0.5]{Siriusxray}
+     
+      (Chandra image)
+  \end{itemize}
+\end{frame}
+
+\subsection{WD Compositions}
+
+\begin{frame}{WD Compositions}{From Nelemans et al (2001b)}
+  \begin{itemize}
+    \item {No solitary He WDs yet. Almost all solitary WDs are CO, with 1\% ONe and Si.}
+    \item {Mass transfer in binaries, mostly during the red giant phases, allows for He WDs. In fact, most binary WD systems have at least one He WD.}
+    \item {He WDs tend to have $M\sim0.4M_{\odot}\rightarrow$ they don't contribute much to super-Chandrasekhar binary pairs.}
+    \item {Around 1/4 binary WDs are CO-CO, and around half of these are super-Chandrasekhar.}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{WD Binary Evolution}
+  \begin{itemize}
+    \item {Fig 1 from Nelemans et al. (2001). Clockwise from top left: He-He, CO-CO, He-CO, CO-He.}
+    \item {Note that CO-CO pairs require the widest separation to minimize mass transfer, and that $215R_{\odot}=1$ AU.}
+  \begin{center} \includegraphics[scale=0.35]{nelemansfig1}\end{center}
+  \end{itemize}
+\end{frame}
+
+\section{Frequency}
+
+\begin{frame}{How many candidates?}{From Nelemans et al. (2001b)}
+  \begin{itemize}
+    \item {$10^{10}$ WDs total in Milky Way.}
+    \item {Around 2.5\% of WDs are already in a WD binary. About half will be eventually (Raghavan et al, 2010). Many current WDs still have a main sequence companion that will evolve into a WD, and many current main sequence binaries will one day be WD binaries.}
+    \item {Not all binaries will merge in a reasonable time frame. Gravitational wave losses in systems with current periods $\sim$12 hours will produce a merger within a Hubble time (about half of {\it current} binaries).}
+    \item {Altogether, more than $10^8$ WD binaries will merge within a Hubble time in the Milky Way.}
+    \item {$10^8$ in $10^{10}$ years means 1 per 100 years, and about 1 super-Chandrasekhar CO-CO pair per 300 years.}
+    \item {Each remains spectacularly visible for around 10,000 years (more on that later), so there should be dozens in both the Milky Way and Andromeda.}
+  \end{itemize}
+\end{frame}
+
+\section{Observability}
+
+\subsection{Tidal Disruption}
+
+\begin{frame}{Observability}{Tidal Disruption}
+  \begin{itemize}
+    \item {WDs are small and therefore hard to see, but merger disrupts them and creates a $\sim$0.1pc nebula. Figure 3 from Dan et al (2014) depicts tidal disruption during merger.}
+      \begin{center}\includegraphics[scale=0.4]{danfig3}\end{center}
+    \item {Especially massive pairs explode in type Ia supernovae.}
+  \end{itemize}
+\end{frame}
+
+\subsection{HR Diagram}
+
+\begin{frame}{Observability}{Path on HR Diagram for Non-Supernova Mergers (Schwab et al 2016)}
+  \begin{itemize}
+    \item {Fig 11 from Schwab et al. Note the large effective radii, 10000 $L_{\odot}$.}
+    \item {(1) C burning ignites, (2) degeneracy lifts (T skyrockets), (3) T high enough to ionize nebula, (4) neutrino-cooled contraction.}
+      \begin{center}\includegraphics[scale=0.55]{schwabfig11}\end{center}
+      \item {The emission nebula formed in (3) will look like any other planetary nebula, except for a smoking gun absence of H and He. There should be dozens in the Milky Way and Andromeda, but none are known; perhaps they are obscured by dust produced in the merger.}
+  \end{itemize}
+\end{frame}
+
+\subsection{Supernovae}
+
+\begin{frame}{Observability}{Supernovae}
+  \begin{itemize}
+    \item{Merging CO-CO WDs have recently gained favor as a source of type Ia supernovae, but the fractional contributions remain uncertain (Dan et al 2015, Howell et al 2006).}
+    \item{Highly super-Chandrasekhar pairs $\sim$2$M_{\odot}$ explode as extra-energetic type Ia supernova. Both WDs tidally disrupt each other and collapse to a single highly super $M_C$ body, instead of steadily ramping one WD's mass to $M_C$ via accretion (Dan et al 2014, Howell et al 2006).}
+    \item {Fig 3 from Dan et al. (2014). }
+      \includegraphics[scale=0.4]{danfig1}
+  \end{itemize}
+\begin{textblock*}{64mm}(85mm,0.5\textheight)
+\begin{exampleblock}{}
+CO-CO mergers are 
+
+on the right
+\end{exampleblock}
+\end{textblock*}
+
+
+\end{frame}
+
+\begin{frame}{Observability}{SNLS-03D3bb from Howell et al (2006)}
+\begin{itemize}
+      \item{SNLS-03D3bb (redshift 0.24) was 2.2x brighter than standard candle type Ia prediction models suggested.}
+    \item {Figure 2 from Howell et al (2006) shows type Ia supernovae near enough to have brightness cross checks available. The dotted line is the hard limit for $M_C$ type Ia Ni-56 production.}
+\begin{center}\includegraphics[scale=0.35]{howellfig2}\end{center}
+\end{itemize}
+\end{frame}
+
+\section{Modeling}
+
+\begin{frame}{Modeling}{Novel Contributions from Schwab et al (2016)}
+  \begin{itemize}
+    \item {Internal changes are not reflected on surface in real time, but impact on final state is.}
+    \item {Some super-Chandrasekhar mergers eject enough mass to remain below $M_C$.}
+    \item {Can be distinguished from AGB stars via lack of H and He.}
+    \item {Include effects of viscosity: C burning starts in hours, not 10,000 years. (Schwab et al, 2012)}
+    \item {The evolution of super-Chandrasekhar mergers is characterized by a series of mass cutoffs and, in stable mergers, repeated ignition of off-center burning (next slide).}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modeling}{Schwab et al (2016) continued: Mass Cutoffs}
+\begin{itemize}
+    \item {Higher mass cores contract more efficiently via neutrino cooling and so ignite more easily.}
+    \item {If an ONe core cools to degeneracy, it collapses via e-capture at $1.38M_{\odot}$. But, a post-merger WD has degeneracy lifted by C burning, and hot ONe WDs ignite below $1.38M_{\odot}$ (even 50/50 ONe).}
+    \item {If Si burns, WD$\rightarrow$NS.}
+    \item {Fig C2 from Schwab et al (2016). }
+\end{itemize}
+    \begin{center}\includegraphics[scale=1.]{schwabfigc2}\end{center}
+\begin{textblock*}{64mm}(44mm,0.55\textheight)
+\begin{exampleblock}{}
+  1.35$M_{\odot}$ 
+\end{exampleblock}
+\end{textblock*}
+
+\begin{textblock*}{64mm}(58mm,0.55\textheight)
+\begin{exampleblock}{}
+  1.375$M_{\odot}$ (\underline{Not} EC)
+\end{exampleblock}
+\end{textblock*}
+
+\begin{textblock*}{64mm}(84mm,0.48\textheight)
+\begin{exampleblock}{}
+  1.41$M_{\odot}$ 
+\end{exampleblock}
+\end{textblock*}
+\end{frame}
+
+\begin{frame}{Modeling}{WD Composition Progression from Schwab et al (2016)}
+\begin{itemize}
+\item {Fig 3 from Schwab et al (2016). Note especially that the ONe stage of the merger is closer to the Ne case than 50-50 Ne/O case from the previous slide. }
+\begin{center}\includegraphics[scale=0.5]{schwabfig10}\end{center}
+\begin{textblock*}{64mm}(95mm,0.56\textheight)
+\begin{exampleblock}{}
+  2:1 Ne:O, roughly.
+\end{exampleblock}
+\end{textblock*}
+
+\end{itemize}
+\end{frame}
+
+\section{Summary}
+
+\begin{frame}{Summary}
+\begin{itemize}
+\item {Dozens of super-Chandrasekhar WD merger remnants should be visible in nearby galaxies.}
+\item {Contribute to low mass NS population and anomalous type Ia supernovae.}
+\item {Look like H/He depleted AGB stars.}
+\item {Clear mass cutoffs for compositions of stable final states predicted, which make for excellent tests of physics.}
+\item {Future: Find one! They are not that rare and should be easy to see\ldots}
+\end{itemize}
+\end{frame}
+
+% References
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{References}
+  \fontsize{6}{7.2}\selectfont
+  \begin{thebibliography}{10}
+    \beamertemplatearticlebibitems
+
+    \bibitem{Schwab2016}
+      Schwab, J. and Quataert, E. and Kasen, D.
+      \newblock The evolution and fate of super-Chandrasekhar mass white dwarf merger remnants.
+      \newblock {\em MNRAS}, 463:3461--3475, 2016
+
+    \bibitem{Calamida2008}
+      Calamida, A., Corsi, C. E., Bono, G., et al.
+      \newblock On the White Dwarf Cooling Sequence of the Globular Cluster $\omega$ Centauri.
+      \newblock {\em The Astrophysical Journal Letters}, 673, L29, 2008
+      
+      \bibitem{Dan2014}
+        {Dan}, M. and {Rosswog}, S. and {Brüggen}, M. and {Podsiadlowski}, P.
+      \newblock{The structure and fate of white dwarf merger remnants}
+      \newblock {\em MNRAS} 438, 14, 2014
+
+     \bibitem{Dan2015}
+       Dan, M., Guillochon, J., Brueggen, M., Ramirez-Ruiz, E., and Rosswog, S.
+       \newblock Thermonuclear detonations ensuing white dwarf mergers
+       \newblock {\em MNRAS}, 454, 4411, 2015
+
+     \bibitem{Howell2006}
+       Howell, D. A., Sullivan, M., Nugent, P.E., et al. 
+       \newblock The type Ia supernova SNLS-03D3bb from a super-Chandrasekhar-mass white dwarf star.
+       \newblock {\em Nature}, 443, 308, 2006 
+
+     \bibitem{Nelemans2001a}
+       Nelemans, G., Yungelson, L. R., Portegies Zwart, S. F., and Verbunt, F. 
+       \newblock Population synthesis for double white dwarfs . I. Close detached systems.
+       \newblock {\em A\&A}, 365, 491, 2001
+
+     \bibitem{Nelemans2001b}
+       Nelemans, G., Zwart, S. F. Portegie, Verbunt, F., and Yungelson, L. R. 
+       \newblock Population synthesis for double white dwarfs II. Semi-detached systems: AM CVn stars
+       \newblock {\em A\&A}, 368, 939. 2001
+
+     \bibitem{Raghavan2010}
+       Raghavan, D., McAlister, H. A., Henry, T. J., et al. 
+       \newblock A Survey of Stellar Families: Multiplicity of Solar-type Stars.
+       \newblock {\em ApJS}, 190, 1, 2010
+
+     \bibitem{Schwab2012}
+       Schwab, J., Shen, K. J., Quataert, E., Dan, M., and Rosswog, S.
+       \newblock The viscous evolution of white dwarf merger remnants.
+       \newblock {\em MNRAS}, 427, 190, 2012
+
+ \end{thebibliography}
+\end{frame}
+
+\end{document}

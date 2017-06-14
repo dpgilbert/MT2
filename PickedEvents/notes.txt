@@ -1,0 +1,17 @@
+gluino = 1000021
+LSP = 1000022
+
+T1bbbb: 
+* back to back LSPs
+* secondary vertices are not in obvious spots because displayed tracks are only PF tracks, not all tracks
+
+T1tttt:
+* back to back LSPs
+* nice muon (from W decay?)
+* what's up with the big photon and electron? Doesn't seem to match gen record in an obvious way.
+* Why are ECAL deposits filtered for up quarks by default but not downs? Photon + electron make sense but…?
+
+T1qqqq:
+* LSPs are not back to back, but are boosted down the beam line
+* Very compressed; Mgluino = 750, Mchi = 725
+* jets are soft in pT due to z boost + small leftover energy due to compressed mass spectrum

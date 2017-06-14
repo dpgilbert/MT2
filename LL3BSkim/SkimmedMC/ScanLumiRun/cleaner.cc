@@ -2,7 +2,8 @@
 #include <fstream>
 #include <boost/algorithm/string/classification.hpp> // is_any_of( ... )
 #include <boost/algorithm/string/split.hpp> // split
-
+#include <vector>
+#include <string>
 
 using namespace std;
 
@@ -22,28 +23,14 @@ int main (int argc, char ** argv)
     }
   ofstream output(argv[2]);
 
-  int n;
-  int counter = 0;
-  while (!input.eof() && counter < 3)
-    {      
-      if (n == 42) // asterisk 
-	continue;
-      cout << n;
-      if (! input >> n) continue;
-      if (counter == 0)
-	{
-	  counter++;
-	}
-      else if (counter < 3)
-	{
-	  counter++;
-	  output << n << ":";
-	}
-      else if (counter == 3)
-	{
-	  counter = 0;
-	  output << n << endl;
-	}
+  while (! input.eof())
+    {
+      string nextline;
+      getline(input, nextline);
+      vector<string> split;
+      boost::split(split, nextline, boost::is_any_of(" *\t"), boost::token_compress_on);
+      if (split.size() < 5) continue;
+      output << split.at(2) << ":" << split.at(3) << ":" << split.at(4) << endl;
     }
 
   input.close();
