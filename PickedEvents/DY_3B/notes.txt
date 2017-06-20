@@ -1,0 +1,4 @@
+1: 4 real bottoms, hard neutrinos for genuine MET from tau decay
+2: one real pair of bs, plus fakes, genuine neutrino MET from tau decay
+3: all light quark / gluon fakes, MET suspiciously aligned with a very hard muon
+4: 
