@@ -1,0 +1,9 @@
+for errors of form lnN:
+
+sum all terms of form err_1, err_2, ... as sqrt{(err_1 - 1)^2 + (err_2 - 1)^2 + ...} then multiply by rate
+
+for errors of form gmN:
+
+look up form of gamma function errors for each K, Theta pair (each background has its own control region with K events and transfer factor Theta)
+
+The overall error is the sum of these two errors in quadrature.

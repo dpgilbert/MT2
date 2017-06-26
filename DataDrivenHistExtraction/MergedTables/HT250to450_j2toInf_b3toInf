@@ -1,0 +1,15 @@
+bin	m200to300
+zinvDY	35.025	13.5204
+llep	67.432	13.7476
+qcd	7.359	9.11042
+zinvGJ	0	0
+bin	m300to400
+zinvDY	8.692	3.38823
+llep	7.883	2.39392
+qcd	0.622	0.970827
+zinvGJ	0	0
+bin	m400toInf
+zinvDY	0.31	0.160513
+llep	0.149	0.155336
+qcd	0.011	0.0205712
+zinvGJ	0	0
