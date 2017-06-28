@@ -189,7 +189,7 @@ int main (int argc, char ** argv)
       mc_qcd->Draw("E1");
       dd_qcd->Draw("E1 same");
       tl_qcd->Draw();
-      c1.SaveAs( ("PDFs/qcd_estimates_"+sr_key_mc[i]+".pdf").c_str() );
+      c1.SaveAs( ("PNGs/qcd_estimates_"+sr_key_mc[i]+".png").c_str() );
 
       MaxToSet = max(mc_ll->GetMaximum(), dd_ll->GetMaximum());
       MinToSet = min(mc_ll->GetMinimum(), dd_ll->GetMinimum());
@@ -199,7 +199,7 @@ int main (int argc, char ** argv)
       mc_ll->Draw("E1");
       dd_ll->Draw("E1 same");
       tl_ll->Draw();
-      c1.SaveAs( ("PDFs/lostlep_estimates_"+sr_key_mc[i]+".pdf").c_str() );
+      c1.SaveAs( ("PNGs/lostlep_estimates_"+sr_key_mc[i]+".png").c_str() );
       
       double zdy_max = 0.0, zgj_max = 0.0, zdy_min = FLT_MAX, zgj_min = FLT_MAX;
       if (i != 42) zdy_max = dd_zdy->GetMaximum();
@@ -214,7 +214,7 @@ int main (int argc, char ** argv)
       if (i != 42) dd_zdy->Draw("E1 same");
       if (i != 17 && i < 50) dd_zgj->Draw("E1 same");
       tl_z->Draw();
-      c1.SaveAs( ("PDFs/zinv_estimates_"+sr_key_mc[i]+".pdf").c_str() );      
+      c1.SaveAs( ("PNGs/zinv_estimates_"+sr_key_mc[i]+".png").c_str() );      
 
       // ratio plots
       c1.SetLogy( false );
@@ -223,14 +223,14 @@ int main (int argc, char ** argv)
       mc_qcd->SetMinimum( 0 );
       mc_qcd->SetTitle( Form("QCD %s M_{T2} Ratio;M_{T2} (GeV);MC/DD", sr_desc[i].c_str() ));
       mc_qcd->Draw("E1");
-      c1.SaveAs( ("PDFs/qcd_ratio_"+sr_key_mc[i]+".pdf").c_str() );
+      c1.SaveAs( ("PNGs/qcd_ratio_"+sr_key_mc[i]+".png").c_str() );
       
       mc_ll->Divide(dd_ll);
       mc_ll->SetMaximum( 3.0 );
       mc_ll->SetMinimum( 0 );
       mc_ll->SetTitle( Form("Lost Lepton %s M_{T2} Ratio;M_{T2} (GeV);MC/DD", sr_desc[i].c_str()));
       mc_ll->Draw("E1");
-      c1.SaveAs( ("PDFs/lostlep_ratio_"+sr_key_mc[i]+".pdf").c_str() );
+      c1.SaveAs( ("PNGs/lostlep_ratio_"+sr_key_mc[i]+".png").c_str() );
 
       mc_z->SetMaximum(3.0);
       mc_z->SetMinimum(0);
@@ -240,7 +240,7 @@ int main (int argc, char ** argv)
 	  mc_z1->Divide(dd_zdy);
 	  mc_z1->SetTitle( Form("Z->#nu#nu %s M_{T2} Ratio;M_{T2} (GeV);MC/DD (DY)", sr_desc[i].c_str()));
 	  mc_z1->Draw("E1");
-	  c1.SaveAs( ("PDFs/zinv_ratio_dy_"+sr_key_mc[i]+".pdf").c_str() );
+	  c1.SaveAs( ("PNGs/zinv_ratio_dy_"+sr_key_mc[i]+".png").c_str() );
 	}
       if (i != 17 && i < 50)
 	{
@@ -248,7 +248,7 @@ int main (int argc, char ** argv)
 	  mc_z2->Divide(dd_zgj);
 	  mc_z2->SetTitle( Form("Z->#nu#nu %s M_{T2} Ratio;M_{T2} (GeV);MC/DD (GJ)", sr_desc[i].c_str()));
 	  mc_z2->Draw("E1");
-	  c1.SaveAs( ("PDFs/zinv_ratio_gj_"+sr_key_mc[i]+".pdf").c_str() );
+	  c1.SaveAs( ("PNGs/zinv_ratio_gj_"+sr_key_mc[i]+".png").c_str() );
 	}
       
     }
