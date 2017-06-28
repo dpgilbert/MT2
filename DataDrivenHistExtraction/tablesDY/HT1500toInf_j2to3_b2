@@ -1,4 +1,4 @@
 bin	m400toInf
 zinv	0	0
-llep	0	0
-qcd	0.02	0.0129223
+llep	0	0.03623
+qcd	0.02	0.0129241

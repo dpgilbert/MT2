@@ -14,7 +14,7 @@ using namespace std;
 
 float GammaVariance (float k, float theta)
 {
-  return k * theta * theta;
+  return (k+1) * theta * theta;
 }
 
 int main (int argc, char ** argv)
@@ -29,7 +29,6 @@ int main (int argc, char ** argv)
 	  istream input(&fb);
 	  TString contents;
 	  contents.ReadFile(input);
-	  cout << contents << endl;
 	  TObjArray * tokens = contents.Tokenize("\n\t ");
 
 	  float zinvrate = 0.0;
@@ -107,15 +106,9 @@ int main (int argc, char ** argv)
 		    }
 		}
 	    }
-	  cout << "zinv rate is: " << zinvrate << endl;
-	  cout << "llep rate is: " << lleprate << endl;
-	  cout << "qcd rate is: " << qcdrate << endl;
 	  float zerr = sqrt( (zlnN * zinvrate * zinvrate) + zgmN);
 	  float llerr = sqrt( (lllnN * lleprate * lleprate) + llgmN);
 	  float qcderr = sqrt( (qcdlnN * qcdrate * qcdrate) + qcdgmN);
-	  cout << "z error is: " << zerr << endl;
-	  cout << "llep error is: " << llerr << endl;
-	  cout << "qcd error is: " << qcderr << endl;
 	  
 	  fb.close();
 	  tokens->Delete();
@@ -127,12 +120,9 @@ int main (int argc, char ** argv)
 	  int last_slash = in_name.Last('/');
 	  int ss_length = (in_name.Length() - 4) - last_slash;
 	  TString clean_name = in_name(last_slash+1, ss_length-1);
-	  cout << clean_name << endl;
 	  int last_underscore = clean_name.Last('_');
 	  TString output_name = clean_name(0,last_underscore);
-	  cout << output_name << endl;
 	  TString bin_name = clean_name(last_underscore + 1, clean_name.Length() - last_underscore);
-	  cout << bin_name << endl;
 
 	  ofstream outfile;
 	  outfile.open( (output_name.Prepend("tablesDY/")).Data(), ios_base::app);

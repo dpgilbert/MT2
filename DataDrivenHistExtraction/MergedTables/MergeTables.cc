@@ -15,7 +15,7 @@ int main (int argc, char ** argv)
 
   if (argc < 2) 
     {
-      cout << "need input files" << endl;
+      cout << "Usage: ./MergeTables /path/to/desired/DY/input/file(s)/*" << endl;
       return 1;
     }
 
