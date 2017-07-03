@@ -66,7 +66,11 @@ int main (int argc, char ** argv)
 		}
 	      else if (tokenj.EqualTo("qcd"))
 		{
-		  outfile << "qcd\t" << tokenj1 << "\t" << tokenj2 << endl;
+		  // pull QCD numbers from GJ since it's updated to new correct ETH file
+		  // while DY is currently running on it
+		  TString QCDrateFromGJ = ((TObjString *) (tokensGJ->At(j+1)))->String();
+		  TString QCDerrFromGJ = ((TObjString *) (tokensGJ->At(j+2)))->String();
+		  outfile << "qcd\t" << QCDrateFromGJ << "\t" << QCDerrFromGJ << endl;		  
 		  TString tokenzgjrate = ((TObjString *) (tokensGJ->At(j-5)))->String();	      
 		  TString tokenzgjerr = ((TObjString *) (tokensGJ->At(j-4)))->String();	      
 		  outfile << "zinvGJ\t" << tokenzgjrate << "\t" << tokenzgjerr << endl;
@@ -81,8 +85,8 @@ int main (int argc, char ** argv)
 	}
       else 
 	{
-	  cout << "could not open input files: " << i << ", " << inputFileDY << " or " << inputFileGJ << ". Exiting." << endl;
-	  return 1;
+	  cout << "could not open input files: " << i << ", " << inputFileDY << " or " << inputFileGJ << ". Continuing..." << endl;
+	  // return 1; some regions missing now, so don't just abort
 	}
     }
 }

@@ -45,7 +45,10 @@ int main (int argc, char ** argv)
   const char * lepVeto = "(nMuons10 + nElectrons10 + nPFLep5LowMT + nPFHad10LowMT == 0)";
   const char * mt2Cut = "(nJet30 < 2 || mt2 > 400 || (mt2 > 200 && ht < 1500) )";
 
-  const char * selection_string = Form("%s && %s && %s && %s && %s", njCut, dphiCut, domCut, lepVeto, mt2Cut);
+  const char * cleanCut1 = "(met_miniaodPt / met_caloPt <= 5.0)";
+  const char * cleanCut2 = "(nJet200MuFrac50DphiMet == 0)";
+
+  const char * selection_string = Form("%s && %s && %s && %s && %s && %s && %s", njCut, dphiCut, domCut, lepVeto, mt2Cut, cleanCut1, cleanCut2);
 
   TTree * skimmed = chain->CopyTree ( selection_string );
   skimmed->Write();

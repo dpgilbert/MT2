@@ -28,7 +28,7 @@ TH1F* GetDataDrivenHist (const string& filename, const string& sample)
 
 TH1F* GetMonteCarloHist (const string& filename, const string& SR_key)
 {
-  TString file = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/output/%s.root", filename.c_str());
+  TString file = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/output/CleanSkim/%s.root", filename.c_str());
   TFile * tf = TFile::Open(file);
   TH1F* toReturn = (TH1F*) (tf->Get(SR_key.c_str()))->Clone();
   toReturn->SetDirectory(0);

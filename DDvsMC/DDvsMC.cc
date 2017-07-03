@@ -30,7 +30,7 @@ int main (int argc, char ** argv)
     }
 
   const char * sample = argv[1];
-  const TString mc_input_name = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/SkimmedMC/%s.root",sample);
+  const TString mc_input_name = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/SkimmedMC_clean/%s.root",sample);
   TFile * tf = TFile::Open(mc_input_name);
   TTree *tree = (TTree*)tf->Get("mt2");
   if ( tree == NULL) 
@@ -99,7 +99,7 @@ int main (int argc, char ** argv)
 	}
     }
 
-  TString out_name = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/output/%s.root", sample);
+  TString out_name = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/output/CleanSkim/%s.root", sample);
   TFile outfile( out_name, "RECREATE");
   for (map< SR*, TH1F* >::iterator it_h = hists.begin(); it_h != hists.end(); ++it_h)
     {

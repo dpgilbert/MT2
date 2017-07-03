@@ -14,7 +14,7 @@ using namespace std;
 
 TH1F* GetHist (const string& filename, const string& SR_key)
 {
-  TString file = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/output/%s.root", filename.c_str());
+  TString file = Form("/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/output/CleanSkim/%s.root", filename.c_str());
   TFile * tf = TFile::Open(file);
   TH1F* toReturn = (TH1F*) (tf->Get(SR_key.c_str()))->Clone();
   toReturn->SetDirectory(0);
@@ -31,7 +31,7 @@ int main (int argc, char ** argv)
 			 "1UH", "2UH", "3UH", "4UH", "5UH", "6UH", "7UH", "8UH", "9UH", "10UH", "11UH",
 			 "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"};      		
 
-  TFile tf ("lostlepton.root", "RECREATE");
+  TFile tf ("CleanSkim/lostlepton.root", "RECREATE");
   for (unsigned int i = 0; i < 63; i++)
     {
       TH1F* dy = GetHist("dyjetsll_ht", sr_key[i]);

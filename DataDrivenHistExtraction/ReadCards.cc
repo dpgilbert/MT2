@@ -125,7 +125,8 @@ int main (int argc, char ** argv)
 	  TString bin_name = clean_name(last_underscore + 1, clean_name.Length() - last_underscore);
 
 	  ofstream outfile;
-	  outfile.open( (output_name.Prepend("tablesDY/")).Data(), ios_base::app);
+	  const char * prefix = in_name.Contains("withDY") ? "tablesDY/" : "tablesGJ/";
+	  outfile.open( (output_name.Prepend(prefix)).Data(), ios_base::app);
 	  outfile << "bin\t" << bin_name << endl;
 	  outfile << "zinv\t" << zinvrate << "\t" << zerr << endl;
 	  outfile << "llep\t" << lleprate << "\t" << llerr << endl;

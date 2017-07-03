@@ -1,0 +1,8 @@
+1UH, from1000to1500; mt2 = 576.348, run:lumi:evt = 1:36464:122085032
+1UH, from1000to1500; mt2 = 484.161, run:lumi:evt = 1:12438:41460809
+1UH, from1000to1500; mt2 = 744.877, run:lumi:evt = 1:9735:32450617
+1UH, from2000toInf; mt2 = 1375.7, run:lumi:evt = 1:8300:23127152
+1UH, from300to500; mt2 = 667.532, run:lumi:evt = 1:66060:150055434
+1UH, from500to700; mt2 = 1196.25, run:lumi:evt = 1:31888:92246038
+1UH, from700to1000; mt2 = 815.982, run:lumi:evt = 1:128989:381371555
+1UH, from700to1000; mt2 = 651.694, run:lumi:evt = 1:51882:153396408
