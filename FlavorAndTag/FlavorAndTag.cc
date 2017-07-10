@@ -3,7 +3,9 @@
 
 // ROOT
 #include "TH1.h"
+#include "TH2.h"
 #include "TString.h"
+#include "TFile.h"
 
 // Tools
 #include "../../MT2CORE/mt2tree.h"
@@ -31,6 +33,19 @@ void loop (const TTree * in_tree, const char * file_name)
   mt2tree mt2_tree;
   mt2_tree.Init(input); // Branch boilerplate etc.
 
+  double fix_evtscale1fb = 0;
+  if (file_name[0] == 'T') // signal, prep for evt_scale1fb manual calculation
+    {
+      TString sig_file(file_name);
+      TString sig_sample = file_name[1] == '1' ? sig_file(0,6) : sig_file(0,4); // T1xxxx or T2xx
+      TFile* f_nsig_weights = new TFile(Form("../../babymaker/data/nsig_weights_%s.root",sig_sample.Data()));
+      TH2D* h_sig_nevents = (TH2D*) f_nsig_weights->Get("h_nsig");
+      int binx = h_sig_nevents->GetXaxis()->FindBin(mt2_tree.GenSusyMScan1);
+      int biny = h_sig_nevents->GetYaxis()->FindBin(mt2_tree.GenSusyMScan2);
+      double nevents = h_sig_nevents->GetBinContent(binx,biny);
+      fix_evtscale1fb = 35900 / nevents;
+    }
+
   cout << "Running on " << nMax << " events" << endl;
   
   for( unsigned int event = 0; event < nMax; event++)
@@ -39,7 +54,9 @@ void loop (const TTree * in_tree, const char * file_name)
       
       mt2_tree.GetEntry(event);
       
-      const float w_ = mt2_tree.evt_scale1fb * 35.9;
+      // test ? sig : background
+      const float w_ = (file_name[0] == 'T') ? fix_evtscale1fb * mt2_tree.evt_xsec : 35.9 * mt2_tree.evt_scale1fb;
+      
       //float mt2_ = mt2_tree.mt2;
       //float ht_ =  mt2_tree.ht;
       //float met_ = mt2_tree.met_pt;
