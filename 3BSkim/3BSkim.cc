@@ -22,7 +22,6 @@ int main (int argc, char ** argv)
   TString inputs = Form("%s%s.root", argv[1], argv[2]);
   chain->Add(inputs);
 
-  
   // Skim
 
   TString output_name = Form("%s%s.root", argv[3], argv[2]);

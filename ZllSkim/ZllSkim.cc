@@ -1,6 +1,10 @@
 // A looper to skim MCs for events passing selections
 
 #include <iostream>
+#include <vector>
+#include <cmath>
+
+#include "TH1.h"
 
 #include "../../CORE/Tools/utils.h"
 
@@ -12,7 +16,7 @@ int main (int argc, char ** argv)
 {
   if (argc < 4)
     {
-      cout << "Usage: ./SelectionSkim <input_directory> <sample> <output_directory>" << endl;
+      cout << "Usage: ./ZllSkim <input_directory> <sample> <output_directory>" << endl;
       return 0;
     }
 
@@ -23,16 +27,16 @@ int main (int argc, char ** argv)
   
   // Skim
 
-  TString output_name = Form("%s%s.root", argv[3], argv[2]);
+  TString output_name = Form("%szll_%s.root", argv[3], argv[2]);
   TFile * outfile = TFile::Open( output_name , "RECREATE" );
   
-  // run on skimmed babies, no need for trigger-motivated selection
+  // use zll_* values instead to simulate zinv with zll events
 
   const char * njCut = "(nJet30 > 0)";
-  const char * dphiCut = "(deltaPhiMin > 0.3)";
-  const char * domCut = "(diffMetMht / met_pt < 0.5)";
-  const char * lepVeto = "(nMuons10 + nElectrons10 + nPFLep5LowMT + nPFHad10LowMT == 0)";
-  const char * mt2Cut = "(nJet30 < 2 || mt2 > 400 || (mt2 > 200 && ht < 1500) )";
+  const char * dphiCut = "(zll_deltaPhiMin > 0.3)";
+  const char * domCut = "(zll_diffMetMht / zll_met_pt < 0.5)";
+  const char * lepVeto = "(nMuons10 + nElectrons10 + nPFLep5LowMT + nPFHad10LowMT >= 2)"; // want two leptons in these events
+  const char * mt2Cut = "(nJet30 < 2 || zll_mt2 > 400 || (zll_mt2 > 200 && zll_ht < 1500) )";
 
   const char * cleanCut1 = "(met_miniaodPt / met_caloPt <= 5.0)";
   const char * cleanCut2 = "(nJet200MuFrac50DphiMet == 0)";

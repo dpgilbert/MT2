@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # only dilepton samples
-declare -a Samples=(dyjetsll_ht qcd_ht singletop ttsl ttdl ttg tth ttw_mg_lo ttz_mg_lo tttt twz wjets ww zinv_ht)
+declare -a Samples=(zll_dyjetsll_ht)
 
-INDIR=/home/users/dpg/MT2AnalysisEdit/MyCode/DDvsMC/SkimmedMC_clean/
+INDIR=/home/users/dpg/MT2AnalysisEdit/MyCode/ZllSkim/SkimmedMC/
 OUTDIR=/home/users/dpg/MT2AnalysisEdit/MyCode/3BSkim/SkimmedMC/
 
 for SAMPLE in ${Samples[@]}; do
