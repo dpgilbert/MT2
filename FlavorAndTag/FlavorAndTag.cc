@@ -28,6 +28,7 @@ void loop (const TTree * in_tree, const char * file_name)
   TH1F h_lf("h_light_fakes", "Weighted Light Fake Multiplicity Distribution;Multiplicity;Count @ 35.9 fb^{-1}", 5, 0, 5);
   TH1F h_cf("h_charm_fakes", "Weighted Charm Fake Multiplicity Distribution;Multiplicity;Count @ 35.9 fb^{-1}", 5, 0, 5);
   TH1F h_true("h_true_tags", "Weighted True Tag Multiplicity Distribution;Multiplicity;Count @ 35.9 fb^{-1}", 5, 0, 5);
+  TH1F h_bjet_pt("h_bjet_pt", "Weighted b-Jet p_{T} Distribution;p_{T} (GeV);Count @ 35.9 fb^{-1}", 10, 20, 1020);
 
   TTree* input = (TTree*) in_tree->Clone();
   mt2tree mt2_tree;
@@ -63,6 +64,8 @@ void loop (const TTree * in_tree, const char * file_name)
       const int nj_ = mt2_tree.nJet30;
       //int nb_ = mt2_tree.nBJet20;
 
+      const float* jet_pt_ = mt2_tree.jet_pt;
+
       const int * flav_ = mt2_tree.jet_mcFlavour;
       const float * csv_ = mt2_tree.jet_btagCSV;
 
@@ -75,7 +78,7 @@ void loop (const TTree * in_tree, const char * file_name)
 	  if (csv_[i] < MEDIUM_WORKING_POINT) continue;
 	  switch (abs(flav_[i]))
 	    {
-	    case 0:
+	    case 0: cout << "0 flavor for jet " << i << ", xsec = " << mt2_tree.evt_xsec << ", run:lumi:evt = " << mt2_tree.run << ":" << mt2_tree.lumi << ":" << mt2_tree.evt << endl;
 	    case 21:
 	    case 1:
 	    case 2:
@@ -85,8 +88,9 @@ void loop (const TTree * in_tree, const char * file_name)
 	      charm_fake++; break;
 	    case 5:
 	      true_tag++; break;
-	    default: cout << "anomalous jet flavor " << abs(flav_[i]) << " in event " << event << "." << endl;	      
+	    default: cout << "anomalous jet flavor " << abs(flav_[i]) << " in event " << event << "." << endl;	      	      
 	    }
+	  h_bjet_pt.Fill(jet_pt_[i], w_);
 	}
 
       h_lf.Fill(light_fake, w_);
@@ -103,6 +107,7 @@ void loop (const TTree * in_tree, const char * file_name)
   h_lf.Write();
   h_cf.Write();
   h_true.Write();
+  h_bjet_pt.Write();
   outfile.Close();
 }
     

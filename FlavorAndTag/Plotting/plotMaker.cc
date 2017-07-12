@@ -21,11 +21,13 @@ int main (int argc, char ** argv)
   TH1F * h_lf = (TH1F*) tf->Get("h_light_fakes");
   TH1F * h_cf = (TH1F*) tf->Get("h_charm_fakes");
   TH1F * h_tt = (TH1F*) tf->Get("h_true_tags");
-  
+  TH1F * h_bjet_pt = (TH1F*) tf->Get("h_bjet_pt");
+
   const int LINE_WIDTH = 3;
   h_lf->SetLineWidth(LINE_WIDTH);
   h_cf->SetLineWidth(LINE_WIDTH);
   h_tt->SetLineWidth(LINE_WIDTH);
+  h_bjet_pt->SetLineWidth(LINE_WIDTH);
 
   h_cf->SetLineColor(kRed);
   h_tt->SetLineColor(kGreen);
@@ -59,7 +61,14 @@ int main (int argc, char ** argv)
   axis->SetLabelSize(labelsize);
   axis->Draw();
 
-
   c1.SaveAs( Form("PNGs/%s_norm.png", clean_name.Data()) );
+  
+  TString pt_title = clean_name.Copy().Append(" ");
+  pt_title.Append(h_bjet_pt->GetTitle());
+  h_bjet_pt->SetTitle(pt_title);
+  h_bjet_pt->Draw();
+  c1.SetLogy();
+
+  c1.SaveAs( Form("PNGs/%s_bjet_pt.png", clean_name.Data()));
   
 }
