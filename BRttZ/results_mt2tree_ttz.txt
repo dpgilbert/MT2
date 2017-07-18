@@ -1,0 +1,27 @@
+Running on 6388 events
+Something went wrong with Z in event 2300
+Error setting indices in event 2300: topIndex = 2, ZIndex = -1
+nlightTop = 1
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 5612
+Error setting indices in event 5612: topIndex = 1, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+		LL Top		LC Top		Ll Top		CC Top		Cl Top		ll Top
+LL Z		0.00286		0.00000		0.13454		0.00000		0.00000		0.62691		
+CC Z		0.00000		0.00000		0.11164		0.00000		0.00000		0.33779		
+BB Z		0.00000		0.00000		0.57252		0.00000		0.00000		1.45420		
+NuNu Z		5.03246		8.89406		0.19466		0.00000		0.15744		0.63550		
+ll Z		0.01145		0.02004		0.00859		0.00000		0.00000		0.00573		
