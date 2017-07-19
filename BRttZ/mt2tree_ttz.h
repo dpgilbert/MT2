@@ -317,14 +317,14 @@ public :
    Float_t         genLep_charge[10];   //[ngenLep]
    Int_t           genLep_sourceId[10];   //[ngenLep]
    Int_t           ngenStat23;
-   Float_t         genStat23_pt[10];   //[ngenStat23]
-   Float_t         genStat23_eta[10];   //[ngenStat23]
-   Float_t         genStat23_phi[10];   //[ngenStat23]
-   Float_t         genStat23_mass[10];   //[ngenStat23]
-   Int_t           genStat23_pdgId[10];   //[ngenStat23]
-   Int_t           genStat23_status[10];   //[ngenStat23]
-   Float_t         genStat23_charge[10];   //[ngenStat23]
-   Int_t           genStat23_sourceId[10];   //[ngenStat23]
+   Float_t         genStat23_pt[15];   //[ngenStat23]
+   Float_t         genStat23_eta[15];   //[ngenStat23]
+   Float_t         genStat23_phi[15];   //[ngenStat23]
+   Float_t         genStat23_mass[15];   //[ngenStat23]
+   Int_t           genStat23_pdgId[15];   //[ngenStat23]
+   Int_t           genStat23_status[15];   //[ngenStat23]
+   Float_t         genStat23_charge[15];   //[ngenStat23]
+   Int_t           genStat23_sourceId[15];   //[ngenStat23]
 
    Int_t           ngenLepFromZ;
    Int_t           ngenNuFromZ;

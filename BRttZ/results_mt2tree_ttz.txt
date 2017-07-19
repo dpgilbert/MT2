@@ -1,8 +1,8 @@
 Running on 6388 events
 Something went wrong with Z in event 2300
-Error setting indices in event 2300: topIndex = 2, ZIndex = -1
-nlightTop = 1
-ncharmTop = 0
+Error setting indices in event 2300: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
 nlepTop = 1
 nlightZ = 0
 ncharmZ = 0
@@ -10,9 +10,9 @@ nbotZ = 0
 ngenNuFromZ = 0
 ngenLepFromZ = 0
 Something went wrong with Z in event 5612
-Error setting indices in event 5612: topIndex = 1, ZIndex = -1
-nlightTop = 1
-ncharmTop = 1
+Error setting indices in event 5612: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
 nlepTop = 0
 nlightZ = 0
 ncharmZ = 0
@@ -20,8 +20,15 @@ nbotZ = 0
 ngenNuFromZ = 0
 ngenLepFromZ = 0
 		LL Top		LC Top		Ll Top		CC Top		Cl Top		ll Top
-LL Z		0.00286		0.00000		0.13454		0.00000		0.00000		0.62691		
-CC Z		0.00000		0.00000		0.11164		0.00000		0.00000		0.33779		
-BB Z		0.00000		0.00000		0.57252		0.00000		0.00000		1.45420		
-NuNu Z		5.03246		8.89406		0.19466		0.00000		0.15744		0.63550		
-ll Z		0.01145		0.02004		0.00859		0.00000		0.00000		0.00573		
+LL Z		0.13741		0.00000		0.08874		0.00000		0.44657		0.09160		
+CC Z		0.10592		0.00000		0.05725		0.00000		0.24046		0.04580		
+BB Z		0.57252		0.00286		0.23760		0.00000		0.99905		0.21470		
+NuNu Z		1.95229		5.79101		0.34351		4.43421		2.21279		0.18034		
+ll Z		0.00859		0.00859		0.00286		0.00859		0.01718		0.00000		
+******
+		LL Top		LC Top		Ll Top		CC Top		Cl Top		ll Top
+LL Z		0.75496%	0.00000%	0.48758%	0.00000%	2.45361%	0.50330%	
+CC Z		0.58195%	0.00000%	0.31457%	0.00000%	1.32118%	0.25165%	
+BB Z		3.14565%	0.01573%	1.30545%	0.00000%	5.48918%	1.17962%	
+NuNu Z		10.72661%	31.81795%	1.88739%	24.36317%	12.15791%	0.99088%	
+ll Z		0.04718%	0.04718%	0.01573%	0.04718%	0.09437%	0.00000%	
