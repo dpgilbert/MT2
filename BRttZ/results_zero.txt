@@ -1,0 +1,2201 @@
+Running on 72605 events
+Something went wrong with Z in event 56
+Error setting indices in event 56: topIndex = 3, ZIndex = -1
+nlightTop = 1
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 777
+Error setting indices in event 777: topIndex = 3, ZIndex = -1
+nlightTop = 1
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 883
+Error setting indices in event 883: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 1319
+Error setting indices in event 1319: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 1418
+Error setting indices in event 1418: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 1423
+Error setting indices in event 1423: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 2263
+Error setting indices in event 2263: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 2293
+Error setting indices in event 2293: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 2593
+Error setting indices in event 2593: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 2980
+Error setting indices in event 2980: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 3023
+Error setting indices in event 3023: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 4145
+Error setting indices in event 4145: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 4630
+Error setting indices in event 4630: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 4837
+Error setting indices in event 4837: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 4906
+Error setting indices in event 4906: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 5347
+Error setting indices in event 5347: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 5437
+Error setting indices in event 5437: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 5617
+Error setting indices in event 5617: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 6068
+Error setting indices in event 6068: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 6103
+Error setting indices in event 6103: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 6977
+Error setting indices in event 6977: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 7176
+Error setting indices in event 7176: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 7227
+Error setting indices in event 7227: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 7363
+Error setting indices in event 7363: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 7703
+Error setting indices in event 7703: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 9212
+Error setting indices in event 9212: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Processing event 10000, 13.7718% complete
+Something went wrong with Z in event 10189
+Error setting indices in event 10189: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 10651
+Error setting indices in event 10651: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 11671
+Error setting indices in event 11671: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 11982
+Error setting indices in event 11982: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 12158
+Error setting indices in event 12158: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 12456
+Error setting indices in event 12456: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 12820
+Error setting indices in event 12820: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 12913
+Error setting indices in event 12913: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 13189
+Error setting indices in event 13189: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 13207
+Error setting indices in event 13207: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 14337
+Error setting indices in event 14337: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 14663
+Error setting indices in event 14663: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 14823
+Error setting indices in event 14823: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 15083
+Error setting indices in event 15083: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 15095
+Error setting indices in event 15095: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 15153
+Error setting indices in event 15153: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 15292
+Error setting indices in event 15292: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 15385
+Error setting indices in event 15385: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 15615
+Error setting indices in event 15615: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 16176
+Error setting indices in event 16176: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 16243
+Error setting indices in event 16243: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 16960
+Error setting indices in event 16960: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 17014
+Error setting indices in event 17014: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 17430
+Error setting indices in event 17430: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 17478
+Error setting indices in event 17478: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 17656
+Error setting indices in event 17656: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 17695
+Error setting indices in event 17695: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 18133
+Error setting indices in event 18133: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 18803
+Error setting indices in event 18803: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 19203
+Error setting indices in event 19203: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 19380
+Error setting indices in event 19380: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Processing event 20000, 27.5449% complete
+Something went wrong with Z in event 20283
+Error setting indices in event 20283: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 20614
+Error setting indices in event 20614: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 21463
+Error setting indices in event 21463: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 22206
+Error setting indices in event 22206: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 22407
+Error setting indices in event 22407: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 23441
+Error setting indices in event 23441: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 23655
+Error setting indices in event 23655: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 23669
+Error setting indices in event 23669: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 24144
+Error setting indices in event 24144: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 25080
+Error setting indices in event 25080: topIndex = 5, ZIndex = -1
+nlightTop = 0
+ncharmTop = 0
+nlepTop = 2
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 25099
+Error setting indices in event 25099: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 25854
+Error setting indices in event 25854: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 25974
+Error setting indices in event 25974: topIndex = 1, ZIndex = -1
+nlightTop = 3
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 25990
+Error setting indices in event 25990: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 26025
+Error setting indices in event 26025: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 27429
+Error setting indices in event 27429: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 27491
+Error setting indices in event 27491: topIndex = 3, ZIndex = -1
+nlightTop = 1
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 27668
+Error setting indices in event 27668: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 27760
+Error setting indices in event 27760: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 28105
+Error setting indices in event 28105: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 28422
+Error setting indices in event 28422: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 28504
+Error setting indices in event 28504: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 28644
+Error setting indices in event 28644: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 28907
+Error setting indices in event 28907: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 29084
+Error setting indices in event 29084: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 29101
+Error setting indices in event 29101: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 29402
+Error setting indices in event 29402: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 29885
+Error setting indices in event 29885: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Processing event 30000, 41.3181% complete
+Something went wrong with Z in event 30415
+Error setting indices in event 30415: topIndex = 0, ZIndex = -1
+nlightTop = 3
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 30484
+Error setting indices in event 30484: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 30546
+Error setting indices in event 30546: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 30605
+Error setting indices in event 30605: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 30628
+Error setting indices in event 30628: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 31223
+Error setting indices in event 31223: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 31281
+Error setting indices in event 31281: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 31741
+Error setting indices in event 31741: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 32070
+Error setting indices in event 32070: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 32220
+Error setting indices in event 32220: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 32346
+Error setting indices in event 32346: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 32366
+Error setting indices in event 32366: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 33052
+Error setting indices in event 33052: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 33110
+Error setting indices in event 33110: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 33213
+Error setting indices in event 33213: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 33443
+Error setting indices in event 33443: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 33504
+Error setting indices in event 33504: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 33894
+Error setting indices in event 33894: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 34654
+Error setting indices in event 34654: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 35156
+Error setting indices in event 35156: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 35241
+Error setting indices in event 35241: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 35302
+Error setting indices in event 35302: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 35368
+Error setting indices in event 35368: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 35754
+Error setting indices in event 35754: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 35790
+Error setting indices in event 35790: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 36197
+Error setting indices in event 36197: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 36249
+Error setting indices in event 36249: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 36311
+Error setting indices in event 36311: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 36986
+Error setting indices in event 36986: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 37158
+Error setting indices in event 37158: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 37553
+Error setting indices in event 37553: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 38144
+Error setting indices in event 38144: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 38582
+Error setting indices in event 38582: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 38712
+Error setting indices in event 38712: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 38922
+Error setting indices in event 38922: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 39859
+Error setting indices in event 39859: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Processing event 40000, 55.0912% complete
+Something went wrong with Z in event 40580
+Error setting indices in event 40580: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 41994
+Error setting indices in event 41994: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 42460
+Error setting indices in event 42460: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 42566
+Error setting indices in event 42566: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 43136
+Error setting indices in event 43136: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 43719
+Error setting indices in event 43719: topIndex = 1, ZIndex = -1
+nlightTop = 3
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 43785
+Error setting indices in event 43785: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 44468
+Error setting indices in event 44468: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 44696
+Error setting indices in event 44696: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 44712
+Error setting indices in event 44712: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 44847
+Error setting indices in event 44847: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 44951
+Error setting indices in event 44951: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 45123
+Error setting indices in event 45123: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 45770
+Error setting indices in event 45770: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 45786
+Error setting indices in event 45786: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 46036
+Error setting indices in event 46036: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 46291
+Error setting indices in event 46291: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 46444
+Error setting indices in event 46444: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 46467
+Error setting indices in event 46467: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 46722
+Error setting indices in event 46722: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 46785
+Error setting indices in event 46785: topIndex = 5, ZIndex = -1
+nlightTop = 0
+ncharmTop = 0
+nlepTop = 2
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 46914
+Error setting indices in event 46914: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 47207
+Error setting indices in event 47207: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 47736
+Error setting indices in event 47736: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 47762
+Error setting indices in event 47762: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 48499
+Error setting indices in event 48499: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 48564
+Error setting indices in event 48564: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 48616
+Error setting indices in event 48616: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 48718
+Error setting indices in event 48718: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 48985
+Error setting indices in event 48985: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 49789
+Error setting indices in event 49789: topIndex = 5, ZIndex = -1
+nlightTop = 0
+ncharmTop = 0
+nlepTop = 2
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 49793
+Error setting indices in event 49793: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 49852
+Error setting indices in event 49852: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Processing event 50000, 68.8644% complete
+Something went wrong with Z in event 50271
+Error setting indices in event 50271: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 50393
+Error setting indices in event 50393: topIndex = 0, ZIndex = -1
+nlightTop = 1
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 50535
+Error setting indices in event 50535: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 50598
+Error setting indices in event 50598: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 50699
+Error setting indices in event 50699: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 50977
+Error setting indices in event 50977: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 51070
+Error setting indices in event 51070: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 51441
+Error setting indices in event 51441: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 51685
+Error setting indices in event 51685: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 52151
+Error setting indices in event 52151: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 52265
+Error setting indices in event 52265: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 52371
+Error setting indices in event 52371: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 52595
+Error setting indices in event 52595: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 53089
+Error setting indices in event 53089: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 53125
+Error setting indices in event 53125: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 53377
+Error setting indices in event 53377: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 53420
+Error setting indices in event 53420: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 53855
+Error setting indices in event 53855: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 54028
+Error setting indices in event 54028: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 54409
+Error setting indices in event 54409: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 54619
+Error setting indices in event 54619: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 54694
+Error setting indices in event 54694: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 54879
+Error setting indices in event 54879: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 55685
+Error setting indices in event 55685: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 56905
+Error setting indices in event 56905: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 57754
+Error setting indices in event 57754: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Processing event 60000, 82.6376% complete
+Something went wrong with Z in event 60232
+Error setting indices in event 60232: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 60944
+Error setting indices in event 60944: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 60968
+Error setting indices in event 60968: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 61222
+Error setting indices in event 61222: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 61223
+Error setting indices in event 61223: topIndex = 5, ZIndex = -1
+nlightTop = 0
+ncharmTop = 0
+nlepTop = 2
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 61227
+Error setting indices in event 61227: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 61483
+Error setting indices in event 61483: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 62114
+Error setting indices in event 62114: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 62202
+Error setting indices in event 62202: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 62402
+Error setting indices in event 62402: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 63663
+Error setting indices in event 63663: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 64016
+Error setting indices in event 64016: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 65499
+Error setting indices in event 65499: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 65962
+Error setting indices in event 65962: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 66218
+Error setting indices in event 66218: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 67216
+Error setting indices in event 67216: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 67233
+Error setting indices in event 67233: topIndex = 1, ZIndex = -1
+nlightTop = 3
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 67245
+Error setting indices in event 67245: topIndex = 3, ZIndex = -1
+nlightTop = 1
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 67912
+Error setting indices in event 67912: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 67980
+Error setting indices in event 67980: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 68296
+Error setting indices in event 68296: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 68768
+Error setting indices in event 68768: topIndex = 3, ZIndex = -1
+nlightTop = 0
+ncharmTop = 2
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 68884
+Error setting indices in event 68884: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 69336
+Error setting indices in event 69336: topIndex = 4, ZIndex = -1
+nlightTop = 1
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 69779
+Error setting indices in event 69779: topIndex = 5, ZIndex = -1
+nlightTop = 1
+ncharmTop = 0
+nlepTop = 2
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 69853
+Error setting indices in event 69853: topIndex = 2, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 69904
+Error setting indices in event 69904: topIndex = 5, ZIndex = -1
+nlightTop = 0
+ncharmTop = 0
+nlepTop = 2
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Processing event 70000, 96.4107% complete
+Something went wrong with Z in event 70066
+Error setting indices in event 70066: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 70525
+Error setting indices in event 70525: topIndex = 0, ZIndex = -1
+nlightTop = 4
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 70533
+Error setting indices in event 70533: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 70860
+Error setting indices in event 70860: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 70958
+Error setting indices in event 70958: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 71153
+Error setting indices in event 71153: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 71553
+Error setting indices in event 71553: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 71633
+Error setting indices in event 71633: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 72394
+Error setting indices in event 72394: topIndex = 0, ZIndex = -1
+nlightTop = 2
+ncharmTop = 0
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 72525
+Error setting indices in event 72525: topIndex = 4, ZIndex = -1
+nlightTop = 0
+ncharmTop = 1
+nlepTop = 1
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+Something went wrong with Z in event 72556
+Error setting indices in event 72556: topIndex = 1, ZIndex = -1
+nlightTop = 2
+ncharmTop = 1
+nlepTop = 0
+nlightZ = 0
+ncharmZ = 0
+nbotZ = 0
+ngenNuFromZ = 0
+ngenLepFromZ = 0
+		LL Top		LC Top		Ll Top		CC Top		Cl Top		ll Top
+LL Z		4.92941		7.38540		1.82061		6.35205		10.01919		1.21661		
+CC Z		4.39700		4.40558		1.55439		2.95996		5.99424		0.95898		
+BB Z		21.34208		18.28161		7.85770		10.53166		23.42629		4.58306		
+NuNu Z		8.11248		24.95223		1.51718		20.40018		10.01346		0.75001		
+ll Z		0.22901		0.41222		0.04008		0.30057		0.38359		0.02576		
+******
+		LL Top		LC Top		Ll Top		CC Top		Cl Top		ll Top
+LL Z		2.40280%	3.59995%	0.88744%	3.09626%	4.88378%	0.59303%	
+CC Z		2.14328%	2.14747%	0.75768%	1.44281%	2.92185%	0.46745%	
+BB Z		10.40303%	8.91123%	3.83017%	5.13357%	11.41896%	2.23397%	
+NuNu Z		3.95436%	12.16277%	0.73954%	9.94390%	4.88098%	0.36558%	
+ll Z		0.11163%	0.20093%	0.01954%	0.14651%	0.18698%	0.01256%	

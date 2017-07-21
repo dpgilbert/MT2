@@ -21,13 +21,17 @@ int main (int argc, char ** argv)
   TH1F * h_lf = (TH1F*) tf->Get("h_light_fakes");
   TH1F * h_cf = (TH1F*) tf->Get("h_charm_fakes");
   TH1F * h_tt = (TH1F*) tf->Get("h_true_tags");
-  TH1F * h_bjet_pt = (TH1F*) tf->Get("h_bjet_pt");
+  TH1F * h_tagged_pt = (TH1F*) tf->Get("h_tagged_pt");
+  TH1F * h_trueb_pt = (TH1F*) tf->Get("h_trueb_pt");
+  TH1F * h_trueb_eta = (TH1F*) tf->Get("h_trueb_eta");
 
   const int LINE_WIDTH = 3;
   h_lf->SetLineWidth(LINE_WIDTH);
   h_cf->SetLineWidth(LINE_WIDTH);
   h_tt->SetLineWidth(LINE_WIDTH);
-  h_bjet_pt->SetLineWidth(LINE_WIDTH);
+  h_tagged_pt->SetLineWidth(LINE_WIDTH);
+  h_trueb_pt->SetLineWidth(LINE_WIDTH);
+  h_trueb_eta->SetLineWidth(LINE_WIDTH);
 
   h_cf->SetLineColor(kRed);
   h_tt->SetLineColor(kGreen);
@@ -63,12 +67,24 @@ int main (int argc, char ** argv)
 
   c1.SaveAs( Form("PNGs/%s_norm.png", clean_name.Data()) );
   
-  TString pt_title = clean_name.Copy().Append(" ");
-  pt_title.Append(h_bjet_pt->GetTitle());
-  h_bjet_pt->SetTitle(pt_title);
-  h_bjet_pt->Draw();
-  c1.SetLogy();
+  TString tagged_pt_title = clean_name.Copy().Append(" ");
+  tagged_pt_title.Append(h_tagged_pt->GetTitle());
+  h_tagged_pt->SetTitle(tagged_pt_title);
+  h_tagged_pt->Draw();
 
-  c1.SaveAs( Form("PNGs/%s_bjet_pt.png", clean_name.Data()));
+  c1.SaveAs( Form("PNGs/%s_tagged_pt.png", clean_name.Data()));
   
+  TString trueb_pt_title = clean_name.Copy().Append(" ");
+  trueb_pt_title.Append(h_trueb_pt->GetTitle());
+  h_trueb_pt->SetTitle(trueb_pt_title);
+  h_trueb_pt->Draw();
+  
+  c1.SaveAs( Form("PNGs/%s_trueb_pt.png", clean_name.Data()));
+
+  TString trueb_eta_title = clean_name.Copy().Append(" ");
+  trueb_eta_title.Append(h_trueb_eta->GetTitle());
+  h_trueb_eta->SetTitle(trueb_eta_title);
+  h_trueb_eta->Draw();
+  
+  c1.SaveAs( Form("PNGs/%s_trueb_eta.png", clean_name.Data()));
 }

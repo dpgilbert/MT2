@@ -6,5 +6,17 @@ for SAMPLE in ${Samples[@]}; do
     eval 'nohup nice -n 10 ./FlavorAndTag.exe ../3BSkim/SkimmedMC/${SAMPLE}.root >& logs/${SAMPLE}_log.txt &'
 done
 
+declare -a LowSamples=(tth_low ttz_mg_lo_low)
+
+for SAMPLE in ${LowSamples[@]}; do
+    eval 'nohup nice -n 10 ./FlavorAndTag.exe ../3BSkim/SkimmedMC_low/${SAMPLE}.root >& logs/${SAMPLE}_log.txt &'
+done
+
+declare -a ZeroSamples=(tth_zero ttz_mg_lo_zero)
+
+for SAMPLE in ${ZeroSamples[@]}; do
+    eval 'nohup nice -n 10 ./FlavorAndTag.exe ../3BSkim/SkimmedMC_zero/${SAMPLE}.root >& logs/${SAMPLE}_log.txt &'
+done
+
 
 
